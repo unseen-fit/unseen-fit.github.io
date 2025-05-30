@@ -37,10 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY > 100) {
-            nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            nav.style.background = 'rgba(21, 23, 23, 0.85)';
             nav.style.backdropFilter = 'blur(20px)';
+            nav.style.webkitBackdropFilter = 'blur(20px)';
         } else {
-            nav.style.background = 'rgba(255, 255, 255, 0.9)';
+            nav.style.background = 'rgba(21, 23, 23, 0.98)';
+            nav.style.backdropFilter = 'blur(20px)';
+            nav.style.webkitBackdropFilter = 'blur(20px)';
         }
 
         // Hide/show navbar on scroll
@@ -235,25 +238,212 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     preloadResources();
+
+    // Email capture form handling
+    const emailForms = document.querySelectorAll('#early-access-form, #final-email-form');
+    
+    emailForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = this.querySelector('input[type="email"]');
+            const email = emailInput.value;
+            const button = this.querySelector('button[type="submit"]');
+            const originalButtonText = button.textContent;
+            
+            // Show loading state
+            button.textContent = 'Subscribing...';
+            button.disabled = true;
+            
+            // Simulate API call (replace with actual API endpoint)
+            setTimeout(() => {
+                // Here you would normally send the email to your backend
+                console.log('Email captured:', email);
+                
+                // Show success state
+                button.textContent = 'Success! Check your email';
+                button.style.background = 'var(--gray-800)';
+                
+                // Store in localStorage to track conversions
+                localStorage.setItem('unseenfit_prelaunch_email', email);
+                localStorage.setItem('unseenfit_prelaunch_date', new Date().toISOString());
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    emailInput.value = '';
+                    button.textContent = originalButtonText;
+                    button.disabled = false;
+                    button.style.background = '';
+                    
+                    // Show thank you message
+                    showThankYouMessage();
+                }, 3000);
+            }, 1000);
+        });
+    });
+    
+    // Thank you message function
+    function showThankYouMessage() {
+        const message = document.createElement('div');
+        message.className = 'thank-you-message';
+        message.innerHTML = `
+            <div class="message-content">
+                <h3>You're on the list!</h3>
+                <p>You'll be the first to get 50% off when we launch.</p>
+            </div>
+        `;
+        document.body.appendChild(message);
+        
+        setTimeout(() => {
+            message.classList.add('show');
+        }, 100);
+        
+        setTimeout(() => {
+            message.classList.remove('show');
+            setTimeout(() => {
+                document.body.removeChild(message);
+            }, 500);
+        }, 4000);
+    }
+    
+    // Countdown timer
+    function initCountdown() {
+        const countdownElement = document.querySelector('.countdown-timer');
+        if (!countdownElement) return;
+        
+        // Set launch date (30 days from now for demo)
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 30);
+        launchDate.setHours(9, 0, 0, 0); // 9 AM launch time
+        
+        function updateCountdown() {
+            const now = new Date();
+            const diff = launchDate - now;
+            
+            if (diff <= 0) {
+                countdownElement.innerHTML = '<h3>We are LIVE on Kickstarter!</h3>';
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            countdownElement.innerHTML = `
+                <div class="countdown-item">
+                    <span class="countdown-number">${days}</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number">${String(hours).padStart(2, '0')}</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number">${String(minutes).padStart(2, '0')}</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number">${String(seconds).padStart(2, '0')}</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            `;
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    }
+    
+    initCountdown();
+    
+    // Check if user already subscribed
+    const subscribedEmail = localStorage.getItem('unseenfit_prelaunch_email');
+    if (subscribedEmail) {
+        const formNotes = document.querySelectorAll('.form-note');
+        formNotes.forEach(note => {
+            note.innerHTML = `You're already on the list with ${subscribedEmail}`;
+            note.style.color = 'var(--gray-600)';
+        });
+    }
+    
+    // Animate badges on scroll
+    const badges = document.querySelectorAll('.badge');
+    const badgeObserver = new IntersectionObserver(function(entries) {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) scale(1)';
+                }, index * 100);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    badges.forEach(badge => {
+        badge.style.opacity = '0';
+        badge.style.transform = 'translateY(20px) scale(0.9)';
+        badge.style.transition = 'all 0.6s ease';
+        badgeObserver.observe(badge);
+    });
+    
+    // FAQ item animations
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        observer.observe(item);
+    });
 });
 
-// Add CSS for mobile navigation and hero animations
+// Add CSS for email capture and animations
 const additionalCSS = `
+/* Thank you message */
+.thank-you-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: white;
+    padding: 48px;
+    border-radius: var(--border-radius-large);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.thank-you-message.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.thank-you-message h3 {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+}
+
+.thank-you-message p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-body);
+}
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
         top: 72px;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(21, 23, 23, 0.95);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         padding: 32px 24px;
         transform: translateY(-100%);
         opacity: 0;
         transition: all 0.3s ease;
         z-index: 999;
-        border-bottom: 1px solid var(--gray-200);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .nav-links.active {
@@ -263,8 +453,9 @@ const additionalCSS = `
     
     .nav-links a {
         padding: 16px 0;
-        border-bottom: 1px solid var(--gray-200);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         font-size: 1.125rem;
+        color: rgba(255, 255, 255, 0.8);
     }
     
     .nav-cta {
