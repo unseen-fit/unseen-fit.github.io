@@ -10,7 +10,7 @@
     --primary-green: #4CAF50;
     --primary-green-light: #81C784;
     --primary-green-dark: #388E3C;
-    
+
     /* Monochrome Colors */
     --primary-black: #151717;
     --primary-white: #ffffff;
@@ -183,7 +183,8 @@ body {
     justify-content: center;
     overflow: hidden;
     background: var(--primary-black);
-    padding-top: 72px; /* Account for fixed navbar */
+    padding-top: 72px;
+    /* Account for fixed navbar */
 }
 
 .hero-video {
@@ -194,6 +195,12 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    /* Enhanced mobile optimizations */
+    object-position: center center;
+    transform: translateZ(0);
+    /* Enable hardware acceleration */
+    backface-visibility: hidden;
+    /* Improve performance */
 }
 
 .hero-overlay {
@@ -518,8 +525,17 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.3; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
 }
 
 .cta-content {
@@ -827,11 +843,13 @@ html {
     align-items: center;
 }
 
-.problem, .solution {
+.problem,
+.solution {
     padding: 0 40px;
 }
 
-.problem h2, .solution h2 {
+.problem h2,
+.solution h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -846,7 +864,8 @@ html {
     color: var(--primary-green-dark);
 }
 
-.problem p, .solution p {
+.problem p,
+.solution p {
     font-size: 1.125rem;
     line-height: 1.7;
     color: var(--text-secondary);
@@ -1103,40 +1122,59 @@ html {
     .email-form {
         flex-direction: column;
     }
-    
+
     .hero-badges {
         flex-wrap: wrap;
         gap: 24px;
     }
-    
+
     .problem-solution .container {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
+
     .science-content {
         grid-template-columns: 1fr;
         gap: 48px;
     }
-    
+
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
-    
+
     .countdown-timer {
         gap: 24px;
     }
-    
+
     .countdown-number {
         font-size: 2rem;
     }
-    
+
     .comparison-table {
         font-size: 0.875rem;
     }
-    
-    .comparison-table th, .comparison-table td {
+
+    .comparison-table th,
+    .comparison-table td {
         padding: 12px;
+    }
+}
+
+/* Additional mobile optimizations for video */
+@media (max-width: 768px) {
+    .hero-video {
+        /* Optimize for mobile performance */
+        transform: translate3d(0, 0, 0);
+        /* Force GPU acceleration */
+        will-change: transform;
+        /* Optimize for animations */
+    }
+}
+
+/* Preload optimization for critical content */
+@media (prefers-reduced-motion: reduce) {
+    .hero-video {
+        animation: none;
     }
 }
