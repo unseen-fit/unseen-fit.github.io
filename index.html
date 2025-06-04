@@ -11,21 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Giza Stencil Font for Logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Minimal Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">UNSEENFIT</span>
+                <img src="Media/LogoBlack.png" alt="Unseen" class="logo-image">
             </div>
             <div class="nav-links">
+                <a href="#product">Product</a>
                 <a href="#features">Features</a>
                 <a href="#science">Science</a>
                 <a href="#specs">Specs</a>
-                <a href="#faq">FAQ</a>
-                <button class="nav-cta">Get Early Access</button>
+                <button class="nav-cta-btn">Get Early Access</button>
             </div>
             <div class="nav-mobile">
                 <button class="hamburger">
@@ -37,74 +39,103 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="Media/hero-poster.jpg">
-            <source src="Media/HeroPromo.mp4" type="video/mp4">
-            <!-- Fallback for browsers that don't support video -->
-            <div class="hero-fallback"></div>
-        </video>
-        <div class="hero-overlay"></div>
+    <!-- Hero Section - Full Screen Video -->
+    <section class="hero-section">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+                <source src="Media/HeroPromo.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h1 class="hero-title">No Subscription. Ever.</h1>
-            <p class="hero-subtitle">The premium health tracker that helps you live 13 years longer.<br>One payment.
-                Lifetime access. Save $1,500+ over 5 years.</p>
+            <h1 class="hero-title">No Subscription.<br>Ever.</h1>
+            <p class="hero-subtitle">The premium health tracker that helps you live 13 years longer.</p>
 
-            <!-- Email Capture Form -->
-            <div class="email-capture">
-                <h3>Get 50% Off on Launch Day</h3>
-                <p>Be first to know when we launch on Kickstarter</p>
-                <form id="early-access-form" class="email-form">
+            <!-- Hero Email Capture -->
+            <div class="hero-email-capture">
+                <h3 class="hero-cta-title">Get 50% Off on Launch Day</h3>
+                <p class="hero-cta-subtitle">Be first to know when we launch on Kickstarter</p>
+                <form class="hero-email-form">
                     <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn-primary">Get Early Access</button>
+                    <button type="submit" class="btn-primary-hero">Get Early Access</button>
                 </form>
-                <p class="form-note">Join 5,000+ people already on the list</p>
+                <p class="hero-form-note">Join 5,000+ people already on the list • No spam, ever</p>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-            <!-- Trust Badges -->
-            <div class="hero-badges">
-                <div class="badge">
-                    <span class="badge-number">10+</span>
-                    <span class="badge-text">Day Battery</span>
-                </div>
-                <div class="badge">
-                    <span class="badge-number">96%</span>
-                    <span class="badge-text">ECG Accurate</span>
-                </div>
-                <div class="badge">
-                    <span class="badge-number">$0</span>
-                    <span class="badge-text">Monthly Fees</span>
-                </div>
-                <div class="badge">
-                    <span class="badge-number">+13</span>
-                    <span class="badge-text">Years to Life</span>
+    <!-- Product Introduction -->
+    <section class="product-intro">
+        <img src="Media/angled-optimized.png" alt="Unseen Band Health Tracker" class="intro-product-image">
+
+    </section>
+
+    <!-- Product Showcase 1 - Device Hero -->
+    <section class="product-showcase device-hero">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="Media/front.png" alt="UnseenFit Health Tracker - Front View"
+                    class="product-image device-image">
+            </div>
+            <div class="showcase-content">
+                <h3 class="showcase-title">Designed to Disappear</h3>
+                <p class="showcase-description">Worn on your bicep for superior accuracy and complete discretion. Hidden
+                    under clothing, no tan lines, no distractions.</p>
+                <div class="feature-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">10+</span>
+                        <span class="highlight-text">Day Battery</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">96%</span>
+                        <span class="highlight-text">ECG Accurate</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">$0</span>
+                        <span class="highlight-text">Monthly Fees</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem/Solution Section -->
-    <section class="problem-solution">
+    <!-- Large Statement Section -->
+    <section class="statement-section">
         <div class="container">
-            <div class="problem">
-                <h2>Tired of Subscription Fees?</h2>
-                <p>Premium fitness trackers trap you with $30/month fees, die after 5 days, and still can't accurately
-                    track your workouts.</p>
+            <h2 class="statement-text">Everything you need to optimize your health and add years to your life.</h2>
+        </div>
+    </section>
+
+    <!-- Product Showcase 2 - Accuracy -->
+    <section class="product-showcase accuracy-showcase">
+        <div class="showcase-container reverse">
+            <div class="showcase-content">
+                <h3 class="showcase-title">Medical-Grade Accuracy</h3>
+                <p class="showcase-description">96% correlation with medical ECG during weightlifting - the hardest
+                    activity for wearables to track accurately.</p>
+                <div class="accuracy-stats">
+                    <div class="stat-large">
+                        <span class="stat-number">96%</span>
+                        <span class="stat-label">Match with ECG</span>
+                    </div>
+                </div>
             </div>
-            <div class="solution">
-                <h2>We Built What You Actually Want</h2>
-                <p>One-time purchase. 10+ day battery. Best-in-class accuracy. Everything you need to optimize your
-                    health and add years to your life.</p>
+            <div class="showcase-media">
+                <img src="Media/Side.png" alt="UnseenFit Health Tracker - Side Profile showing sensors"
+                    class="product-image accuracy-image">
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
         <div class="container">
             <div class="section-header">
-                <h2>Everything You Need.<br>Nothing You Don't.</h2>
-                <p>All the premium features you expect, without the monthly fees.</p>
+                <h2 class="section-title">Everything You Need.<br>Nothing You Don't.</h2>
+                <p class="section-subtitle">All the premium features you expect, without the monthly fees.</p>
             </div>
 
             <div class="features-grid">
@@ -117,8 +148,7 @@
                         </svg>
                     </div>
                     <h3>Recovery Score</h3>
-                    <p>Daily readiness score based on HRV, RHR, and sleep quality. Know when to push hard or take it
-                        easy.</p>
+                    <p>Daily readiness score based on HRV, RHR, and sleep quality.</p>
                 </div>
 
                 <div class="feature-card">
@@ -131,21 +161,7 @@
                         </svg>
                     </div>
                     <h3>Sleep Intelligence</h3>
-                    <p>Track all 4 sleep stages (REM, Deep, Light, Awake), sleep debt, and wake up during light sleep
-                        with our smart alarm.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="14" y="20" width="20" height="24" rx="2" stroke="currentColor" stroke-width="2" />
-                            <path d="M14 8 L14 12 M34 8 L34 12" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>Strain Tracking</h3>
-                    <p>Accurate strain calculation even during strength training. Bicep placement eliminates wrist
-                        movement errors.</p>
+                    <p>Track all 4 sleep stages with smart alarm wake-up optimization.</p>
                 </div>
 
                 <div class="feature-card">
@@ -157,8 +173,7 @@
                         </svg>
                     </div>
                     <h3>HRV & Heart Rate</h3>
-                    <p>24/7 monitoring as accurate as medical ECG, even during weightlifting. Track HRV trends, resting
-                        heart rate, and real-time zones.</p>
+                    <p>24/7 monitoring as accurate as medical ECG, even during weightlifting.</p>
                 </div>
 
                 <div class="feature-card">
@@ -171,455 +186,159 @@
                         </svg>
                     </div>
                     <h3>Vitality Score™</h3>
-                    <p>Exclusive longevity metric based on heart rate intensity. Keep your score above 100 to add up to
-                        13 years to your life.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="10" y="12" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2" />
-                            <path d="M16 20 L32 20 M16 26 L32 26 M16 32 L26 32" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3>Behavior Journal</h3>
-                    <p>Track how alcohol, supplements, and lifestyle choices impact your recovery. Customizable entries.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 8 L24 24 M16 16 L24 24 L32 16" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <h3>Health Monitoring</h3>
-                    <p>Respiratory rate and SpO2 tracking. Early illness detection through physiological changes in your
-                        vitals.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" />
-                            <path d="M24 8 C32 8 38 14 38 22 C38 26 36 30 32 32" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                            <circle cx="24" cy="24" r="3" fill="currentColor" />
-                        </svg>
-                    </div>
-                    <h3>Works Offline</h3>
-                    <p>Complete privacy. No constant connection needed. Syncs with Apple Health & Google Fit when you
-                        want.</p>
+                    <p>Exclusive longevity metric. Keep your score above 100 to add up to 13 years to your life.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="comparison">
+    <!-- Vitality Score Deep Dive -->
+    <section class="vitality-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Why Pay More for Less?</h2>
-                <p>See how UnseenFit compares to subscription-based trackers</p>
-            </div>
-
-            <div class="comparison-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th class="highlight">UnseenFit</th>
-                            <th>Competition</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monthly Subscription</td>
-                            <td class="highlight">Never</td>
-                            <td>$30-360/year</td>
-                        </tr>
-                        <tr>
-                            <td>Battery Life</td>
-                            <td class="highlight">10+ days</td>
-                            <td>3-7 days</td>
-                        </tr>
-                        <tr>
-                            <td>Heart Rate Accuracy</td>
-                            <td class="highlight">ECG-level</td>
-                            <td>Basic optical</td>
-                        </tr>
-                        <tr>
-                            <td>Works Offline</td>
-                            <td class="highlight">Yes</td>
-                            <td>Limited</td>
-                        </tr>
-                        <tr>
-                            <td>Recovery Score</td>
-                            <td class="highlight">Yes</td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>Sleep Stages</td>
-                            <td class="highlight">Yes</td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>HRV Tracking</td>
-                            <td class="highlight">Yes</td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>Strength Training Mode</td>
-                            <td class="highlight">Accurate</td>
-                            <td>Limited</td>
-                        </tr>
-                        <tr>
-                            <td>Smart Alarm</td>
-                            <td class="highlight">Yes</td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td>Vitality Score™</td>
-                            <td class="highlight">Exclusive</td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td>Replacement Band Price</td>
-                            <td class="highlight">$19</td>
-                            <td>$49-125</td>
-                        </tr>
-                        <tr class="total-row">
-                            <td>Total 5-Year Cost</td>
-                            <td class="highlight">$299</td>
-                            <td>$1,800+</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="savings-calculator">
-                <h3>You Save $1,501 Over 5 Years</h3>
-                <p>That's enough for a vacation, new bike, or 75 months of gym membership</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Science Section -->
-    <section id="science" class="science">
-        <div class="container">
-            <div class="section-header">
-                <h2>Scientifically Proven to Add 13 Years to Your Life</h2>
-                <p>Introducing Vitality Score - Your personal longevity metric</p>
-            </div>
-
-            <div class="science-content">
-                <div class="science-explanation">
-                    <h3>What is Vitality Score?</h3>
-                    <p>Based on groundbreaking research from NTNU tracking over 1 million people, Vitality Score
-                        measures your physical activity intensity through heart rate. Maintaining a score above 100 has
-                        been proven to add up to 13 years to your life expectancy and reduce disease risk by 30%.</p>
-
-                    <div class="research-links">
-                        <a href="https://www.ntnu.no/cerg/aq" target="_blank" class="research-link">
-                            Read the Original Research →
-                        </a>
+            <div class="vitality-content">
+                <div class="vitality-text">
+                    <h2 class="section-title">Scientifically Proven<br>to Add 13 Years to Your Life</h2>
+                    <p class="section-subtitle">Introducing Vitality Score - Your personal longevity metric based on
+                        groundbreaking research from NTNU tracking over 1 million people.</p>
+                    <div class="vitality-stats">
+                        <div class="vitality-stat">
+                            <span class="stat-number">13</span>
+                            <span class="stat-label">Years Added to Life</span>
+                        </div>
+                        <div class="vitality-stat">
+                            <span class="stat-number">30%</span>
+                            <span class="stat-label">Disease Risk Reduction</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="accuracy-showcase">
-                    <h3>Medical-Grade Accuracy</h3>
-                    <div class="accuracy-stat">
-                        <span class="big-number">96%</span>
-                        <span class="stat-label">Match with ECG</span>
-                    </div>
-                    <p>Tested against medical ECG during weightlifting - the hardest activity for wearables to track
-                        accurately. Where others fail, UnseenFit excels.</p>
+                <div class="vitality-visual">
+                    <img src="Media/back.png" alt="UnseenFit Health Tracker - Back view showing sensor array"
+                        class="product-image vitality-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Showcase -->
-    <section class="showcase">
-        <div class="container">
+    <!-- Product Showcase 3 - Design -->
+    <section class="product-showcase design-showcase">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="Media/sideAngle.png" alt="UnseenFit Health Tracker - Angled view showing design details"
+                    class="product-image design-image">
+            </div>
             <div class="showcase-content">
-                <div class="showcase-text">
-                    <h2>Designed to Disappear.<br>Built to Perform.</h2>
-                    <p>Worn on your bicep for superior accuracy and discretion. Hidden under clothing, no tan lines, no
-                        distractions - just comprehensive health insights 24/7.</p>
-
-                    <div class="showcase-features">
-                        <div class="showcase-feature">
-                            <span class="feature-bullet">•</span>
-                            <span>Discreet bicep placement - invisible under clothes</span>
-                        </div>
-                        <div class="showcase-feature">
-                            <span class="feature-bullet">•</span>
-                            <span>On-the-go charging - never take it off</span>
-                        </div>
-                        <div class="showcase-feature">
-                            <span class="feature-bullet">•</span>
-                            <span>Haptic vibration alarm</span>
-                        </div>
-                        <div class="showcase-feature">
-                            <span class="feature-bullet">•</span>
-                            <span>50m water resistant</span>
-                        </div>
-                        <div class="showcase-feature">
-                            <span class="feature-bullet">•</span>
-                            <span>Medical-grade materials</span>
-                        </div>
+                <h3 class="showcase-title">Built to Perform</h3>
+                <p class="showcase-description">Medical-grade materials, 50m water resistance, and on-the-go charging.
+                    Never take it off.</p>
+                <div class="design-features">
+                    <div class="design-feature">
+                        <span>Medical-grade silicone</span>
                     </div>
-                </div>
-                <div class="showcase-media">
-                    <div class="showcase-image-placeholder">
-                        <span>Product Image</span>
-                        <p>UnseenFit on bicep under t-shirt</p>
+                    <div class="design-feature">
+                        <span>50m water resistant</span>
+                    </div>
+                    <div class="design-feature">
+                        <span>Haptic vibration alarm</span>
+                    </div>
+                    <div class="design-feature">
+                        <span>On-the-go charging</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Specifications -->
-    <section id="specs" class="specs">
+    <!-- Value Proposition -->
+    <section class="value-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Technical Specifications</h2>
-                <p>Engineered for accuracy, built for durability.</p>
-            </div>
-
-            <div class="specs-grid">
-                <div class="spec-category">
-                    <h3>Battery & Performance</h3>
-                    <div class="spec-items">
-                        <div class="spec-item">
-                            <span class="spec-label">Battery Life</span>
-                            <span class="spec-value">10+ days</span>
+            <div class="value-content">
+                <h2 class="section-title">Why Pay More for Less?</h2>
+                <div class="value-comparison">
+                    <div class="comparison-item our-product">
+                        <h3>UnseenFit</h3>
+                        <div class="price">$299</div>
+                        <div class="price-note">One-time payment</div>
+                        <div class="features-list">
+                            <div class="feature">10+ day battery</div>
+                            <div class="feature">ECG-level accuracy</div>
+                            <div class="feature">Works offline</div>
+                            <div class="feature">No monthly fees</div>
                         </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Charging Time</span>
-                            <span class="spec-value">90 minutes</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Water Resistance</span>
-                            <span class="spec-value">50m (5ATM)</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Operating Temp</span>
-                            <span class="spec-value">-10°C to 45°C</span>
+                    </div>
+                    <div class="comparison-item competition">
+                        <h3>Competition</h3>
+                        <div class="price">$1,800+</div>
+                        <div class="price-note">Over 5 years</div>
+                        <div class="features-list">
+                            <div class="feature">3-7 day battery</div>
+                            <div class="feature">Basic optical</div>
+                            <div class="feature">Limited offline</div>
+                            <div class="feature">$30-360/year fees</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="spec-category">
-                    <h3>Sensors & Accuracy</h3>
-                    <div class="spec-items">
-                        <div class="spec-item">
-                            <span class="spec-label">Heart Rate Accuracy</span>
-                            <span class="spec-value">96% ECG match</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">HRV Precision</span>
-                            <span class="spec-value">±1ms</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">SpO2 Range</span>
-                            <span class="spec-value">70-100%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spec-category">
-                    <h3>Design & Comfort</h3>
-                    <div class="spec-items">
-                        <div class="spec-item">
-                            <span class="spec-label">Weight</span>
-                            <span class="spec-value">32g</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Material</span>
-                            <span class="spec-value">Medical-grade silicone</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Bicep Sizes</span>
-                            <span class="spec-value">24-40cm</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Band Options</span>
-                            <span class="spec-value">12 colors</span>
-                        </div>
-                    </div>
+                <div class="savings-highlight">
+                    <span class="savings-amount">You Save $1,501</span>
+                    <span class="savings-note">Over 5 years</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
+    <!-- Email Capture -->
+    <section class="email-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about UnseenFit</p>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Why no screen?</h3>
-                    <p>Better battery life, fewer distractions, and preferred by users who want to focus on their
-                        health, not another device to check constantly.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Why bicep placement?</h3>
-                    <p>Superior accuracy during all activities, completely discreet under clothing, and no wrist tan
-                        lines or interference with watches.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What metrics does it track?</h3>
-                    <p>Everything: HRV, RHR, strain, recovery score, sleep stages, respiratory rate, SpO2, and our
-                        exclusive Vitality Score for longevity tracking.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How accurate is strength training?</h3>
-                    <p>Our bicep placement achieves 96% correlation with medical ECG during weightlifting - the gold
-                        standard. This eliminates the wrist movement errors that make other trackers inaccurate during
-                        strength training.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Does it work offline?</h3>
-                    <p>Yes! Complete privacy with no constant connection needed. Syncs with your phone when you choose.
-                    </p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What about replacement bands?</h3>
-                    <p>Fair pricing at just $19 (not $49-125 like others). Available in 12 colors with quick-release
-                        design.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Is there really no subscription?</h3>
-                    <p>Really. One payment, lifetime access to all features. No hidden fees, no premium tiers, no
-                        gotchas.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What's the warranty?</h3>
-                    <p>2-year warranty covering any manufacturing defects. 30-day money-back guarantee if you're not
-                        satisfied.</p>
-                </div>
+            <div class="email-content">
+                <h2 class="section-title">Ready to Save $1,500?</h2>
+                <p class="section-subtitle">Join the waitlist and get 50% off when we launch on Kickstarter</p>
+                <form class="email-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-primary">Get Early Access</button>
+                </form>
+                <p class="form-note">Join 5,000+ people already on the list • Free shipping • 30-day guarantee</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Save $1,500 and Live 13 Years Longer?</h2>
-                <p>Get 50% off when we launch on Kickstarter. Be among the first 500 to secure your UnseenFit at just
-                    $149.</p>
-
-                <div class="final-email-capture">
-                    <form id="final-email-form" class="email-form-large">
-                        <input type="email" placeholder="Enter your email for 50% off" required>
-                        <button type="submit" class="btn-primary large">Get Early Access</button>
-                    </form>
-                    <p class="cta-note">We'll never spam or share your email • Free worldwide shipping • 30-day
-                        money-back guarantee</p>
-                </div>
-
-                <div class="launch-countdown">
-                    <h3>Launching on Kickstarter in:</h3>
-                    <div class="countdown-timer">
-                        <div class="countdown-item">
-                            <span class="countdown-number">30</span>
-                            <span class="countdown-label">Days</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span class="countdown-number">12</span>
-                            <span class="countdown-label">Hours</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span class="countdown-number">45</span>
-                            <span class="countdown-label">Minutes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Floating CTA Button -->
+    <div class="floating-cta">
+        <button class="floating-cta-btn">
+            <span class="floating-cta-text">Get 50% Off</span>
+            <span class="floating-cta-subtext">Launch Day Special</span>
+        </button>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">UNSEENFIT</span>
+                    <img src="Media/LogoBlack.png" alt="Unseen" class="footer-logo">
                     <p>No Subscription. Ever.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
-                        </a>
-                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Product</h4>
                         <a href="#features">Features</a>
                         <a href="#science">Science</a>
-                        <a href="#specs">Specifications</a>
-                        <a href="#faq">FAQ</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="https://www.ntnu.no/cerg/aq" target="_blank">AQ Research</a>
-                        <a href="#">App Download</a>
-                        <a href="#">Support</a>
-                        <a href="#">Blog</a>
+                        <a href="#specs">Specs</a>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#">About Us</a>
+                        <a href="#">About</a>
                         <a href="#">Contact</a>
-                        <a href="#">Press Kit</a>
-                        <a href="#">Partners</a>
+                        <a href="#">Support</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
                         <a href="#">Warranty</a>
-                        <a href="#">Returns</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 UnseenFit. All rights reserved. | Save $1,500+ over 5 years vs subscription trackers.</p>
+                <p>&copy; 2024 UnseenFit. All rights reserved.</p>
             </div>
         </div>
     </footer>

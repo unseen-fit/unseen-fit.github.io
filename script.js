@@ -31,19 +31,65 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Navbar background on scroll
     const nav = document.querySelector('.nav');
+    const logoImage = document.querySelector('.logo-image');
+    const navLinksElements = document.querySelectorAll('.nav-links a');
+    const hamburgerSpans = document.querySelectorAll('.hamburger span');
     let lastScrollY = window.scrollY;
 
     window.addEventListener('scroll', function () {
         const currentScrollY = window.scrollY;
+        console.log('Scroll position:', currentScrollY); // Debug logging
 
         if (currentScrollY > 100) {
-            nav.style.background = 'rgba(21, 23, 23, 0.85)';
+            console.log('Switching to dark theme with white logo'); // Debug logging
+            // Dark background when scrolled with white logo
+            nav.style.background = 'rgba(0, 0, 0, 0.95)';
             nav.style.backdropFilter = 'blur(20px)';
             nav.style.webkitBackdropFilter = 'blur(20px)';
+            nav.style.borderBottomColor = 'rgba(255, 255, 255, 0.1)';
+
+            // Change logo to white version
+            if (logoImage) {
+                console.log('Changing logo to white:', logoImage.src); // Debug logging
+                logoImage.src = 'Media/LogoWhite.png';
+                console.log('Logo changed to:', logoImage.src); // Debug logging
+            } else {
+                console.log('Logo image element not found'); // Debug logging
+            }
+
+            // Change text colors to white
+            navLinksElements.forEach(link => {
+                link.style.color = 'rgba(255, 255, 255, 0.8)';
+            });
+
+            hamburgerSpans.forEach(span => {
+                span.style.background = 'white';
+            });
         } else {
-            nav.style.background = 'rgba(21, 23, 23, 0.98)';
+            console.log('Switching to light theme with black logo'); // Debug logging
+            // Light background at top with black logo
+            nav.style.background = 'rgba(255, 255, 255, 0.95)';
             nav.style.backdropFilter = 'blur(20px)';
             nav.style.webkitBackdropFilter = 'blur(20px)';
+            nav.style.borderBottomColor = 'var(--gray-200)';
+
+            // Change logo to black version
+            if (logoImage) {
+                console.log('Changing logo to black:', logoImage.src); // Debug logging
+                logoImage.src = 'Media/LogoBlack.png';
+                console.log('Logo changed to:', logoImage.src); // Debug logging
+            } else {
+                console.log('Logo image element not found'); // Debug logging
+            }
+
+            // Change text colors back to original
+            navLinksElements.forEach(link => {
+                link.style.color = '';
+            });
+
+            hamburgerSpans.forEach(span => {
+                span.style.background = '';
+            });
         }
 
         // Hide/show navbar on scroll
@@ -241,47 +287,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Email capture form handling
     const emailForms = document.querySelectorAll('#early-access-form, #final-email-form');
-    
+
     emailForms.forEach(form => {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const emailInput = this.querySelector('input[type="email"]');
             const email = emailInput.value;
             const button = this.querySelector('button[type="submit"]');
             const originalButtonText = button.textContent;
-            
+
             // Show loading state
             button.textContent = 'Subscribing...';
             button.disabled = true;
-            
+
             // Simulate API call (replace with actual API endpoint)
             setTimeout(() => {
                 // Here you would normally send the email to your backend
                 console.log('Email captured:', email);
-                
+
                 // Show success state
                 button.textContent = 'Success! Check your email';
                 button.style.background = 'var(--gray-800)';
-                
+
                 // Store in localStorage to track conversions
                 localStorage.setItem('unseenfit_prelaunch_email', email);
                 localStorage.setItem('unseenfit_prelaunch_date', new Date().toISOString());
-                
+
                 // Reset form after delay
                 setTimeout(() => {
                     emailInput.value = '';
                     button.textContent = originalButtonText;
                     button.disabled = false;
                     button.style.background = '';
-                    
+
                     // Show thank you message
                     showThankYouMessage();
                 }, 3000);
             }, 1000);
         });
     });
-    
+
     // Thank you message function
     function showThankYouMessage() {
         const message = document.createElement('div');
@@ -293,11 +339,11 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         `;
         document.body.appendChild(message);
-        
+
         setTimeout(() => {
             message.classList.add('show');
         }, 100);
-        
+
         setTimeout(() => {
             message.classList.remove('show');
             setTimeout(() => {
@@ -305,31 +351,31 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 500);
         }, 4000);
     }
-    
+
     // Countdown timer
     function initCountdown() {
         const countdownElement = document.querySelector('.countdown-timer');
         if (!countdownElement) return;
-        
+
         // Set launch date (30 days from now for demo)
         const launchDate = new Date();
         launchDate.setDate(launchDate.getDate() + 30);
         launchDate.setHours(9, 0, 0, 0); // 9 AM launch time
-        
+
         function updateCountdown() {
             const now = new Date();
             const diff = launchDate - now;
-            
+
             if (diff <= 0) {
                 countdownElement.innerHTML = '<h3>We are LIVE on Kickstarter!</h3>';
                 return;
             }
-            
+
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
+
             countdownElement.innerHTML = `
                 <div class="countdown-item">
                     <span class="countdown-number">${days}</span>
@@ -349,13 +395,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `;
         }
-        
+
         updateCountdown();
         setInterval(updateCountdown, 1000);
     }
-    
+
     initCountdown();
-    
+
     // Check if user already subscribed
     const subscribedEmail = localStorage.getItem('unseenfit_prelaunch_email');
     if (subscribedEmail) {
@@ -365,10 +411,10 @@ document.addEventListener('DOMContentLoaded', function () {
             note.style.color = 'var(--gray-600)';
         });
     }
-    
+
     // Animate badges on scroll
     const badges = document.querySelectorAll('.badge');
-    const badgeObserver = new IntersectionObserver(function(entries) {
+    const badgeObserver = new IntersectionObserver(function (entries) {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
@@ -378,14 +424,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, { threshold: 0.5 });
-    
+
     badges.forEach(badge => {
         badge.style.opacity = '0';
         badge.style.transform = 'translateY(20px) scale(0.9)';
         badge.style.transition = 'all 0.6s ease';
         badgeObserver.observe(badge);
     });
-    
+
     // FAQ item animations
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
@@ -515,4 +561,117 @@ const additionalCSS = `
 // Inject additional CSS
 const style = document.createElement('style');
 style.textContent = additionalCSS;
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+// Floating CTA Button Visibility
+function handleFloatingCTA() {
+    const floatingCTA = document.querySelector('.floating-cta');
+    const heroSection = document.querySelector('.hero-section');
+    const emailSection = document.querySelector('.email-section');
+
+    if (!floatingCTA || !heroSection || !emailSection) return;
+
+    const heroHeight = heroSection.offsetHeight;
+    const emailSectionTop = emailSection.offsetTop;
+    const scrollPosition = window.scrollY;
+
+    // Show floating CTA after hero section, hide when near email section
+    if (scrollPosition > heroHeight && scrollPosition < emailSectionTop - 200) {
+        floatingCTA.classList.add('visible');
+    } else {
+        floatingCTA.classList.remove('visible');
+    }
+}
+
+// Handle CTA button clicks
+function handleCTAClicks() {
+    const ctaButtons = document.querySelectorAll('.nav-cta-btn, .floating-cta-btn');
+    const emailSection = document.querySelector('.email-section');
+
+    ctaButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (emailSection) {
+                emailSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+
+                // Focus on email input after scroll
+                setTimeout(() => {
+                    const emailInput = emailSection.querySelector('input[type="email"]');
+                    if (emailInput) {
+                        emailInput.focus();
+                    }
+                }, 800);
+            }
+        });
+    });
+}
+
+// Handle email form submissions
+function handleEmailForms() {
+    const emailForms = document.querySelectorAll('.hero-email-form, .email-form');
+
+    emailForms.forEach(form => {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const emailInput = form.querySelector('input[type="email"]');
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            if (emailInput && submitButton) {
+                const email = emailInput.value;
+
+                if (email) {
+                    // Show loading state
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Joining...';
+                    submitButton.disabled = true;
+
+                    // Simulate API call (replace with actual endpoint)
+                    setTimeout(() => {
+                        submitButton.textContent = 'Joined! ✓';
+                        submitButton.style.background = '#16a34a';
+
+                        // Show success message
+                        const formNote = form.parentElement.querySelector('.form-note, .hero-form-note');
+                        if (formNote) {
+                            formNote.textContent = 'Success! Check your email for confirmation.';
+                            formNote.style.color = '#16a34a';
+                        }
+
+                        // Clear form
+                        emailInput.value = '';
+
+                        // Reset button after delay
+                        setTimeout(() => {
+                            submitButton.textContent = originalText;
+                            submitButton.disabled = false;
+                            submitButton.style.background = '';
+
+                            if (formNote) {
+                                formNote.textContent = formNote.textContent.includes('Join 5,000+')
+                                    ? 'Join 5,000+ people already on the list • No spam, ever'
+                                    : 'Join 5,000+ people already on the list • Free shipping • 30-day guarantee';
+                                formNote.style.color = '';
+                            }
+                        }, 3000);
+                    }, 1500);
+                }
+            }
+        });
+    });
+}
+
+// Initialize all functionality
+document.addEventListener('DOMContentLoaded', function () {
+    handleCTAClicks();
+    handleEmailForms();
+
+    // Set up scroll listener for floating CTA
+    window.addEventListener('scroll', handleFloatingCTA);
+
+    // Initial check
+    handleFloatingCTA();
+}); 
