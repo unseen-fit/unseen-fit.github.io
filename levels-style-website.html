@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSEEN - Health tracking that stays out of your way</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'levels-dark': '#1a1a1a',
+                        'levels-gray': '#666666',
+                        'levels-light-gray': '#f5f5f5',
+                        'levels-accent': '#0070f3'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        .levels-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        @media (min-width: 768px) {
+            .levels-container {
+                padding: 0 40px;
+            }
+        }
+        .section-padding {
+            padding: 100px 0;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,112,243,0.1) 0%, rgba(0,0,0,0.05) 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-levels-dark font-inter antialiased">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
+        <div class="levels-container">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-levels-dark tracking-tight">UNSEEN</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#how-it-works" class="text-levels-gray hover:text-levels-dark transition-colors text-sm font-medium">How it works</a>
+                    <a href="#features" class="text-levels-gray hover:text-levels-dark transition-colors text-sm font-medium">Features</a>
+                    <a href="#science" class="text-levels-gray hover:text-levels-dark transition-colors text-sm font-medium">Science</a>
+                    <a href="#pricing" class="text-levels-gray hover:text-levels-dark transition-colors text-sm font-medium">Pricing</a>
+                    <a href="#" class="bg-levels-dark text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">Get UNSEEN</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-levels-gray">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-padding hero-gradient">
+        <div class="levels-container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-levels-dark mb-6 tracking-tight leading-tight">
+                    Health tracking that stays out of your way
+                </h1>
+                <p class="text-xl md:text-2xl text-levels-gray mb-8 max-w-3xl mx-auto leading-relaxed">
+                    The world's first bicep-worn, screenless health tracker. Designed for professionals who need comprehensive health insights without the distractions.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                    <a href="#pricing" class="bg-levels-dark text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                        Pre-order for $149
+                    </a>
+                    <a href="#how-it-works" class="text-levels-gray hover:text-levels-dark transition-colors font-medium">
+                        Learn how it works →
+                    </a>
+                </div>
+                
+                <!-- Product Image Placeholder -->
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-levels-light-gray rounded-3xl p-16 aspect-video flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-levels-dark rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                </svg>
+                            </div>
+                            <p class="text-levels-gray text-sm">UNSEEN Device</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-levels-light-gray">
+        <div class="levels-container">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-levels-dark mb-2">10 days</div>
+                    <div class="text-levels-gray text-sm">Battery life</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-levels-dark mb-2">8.6g</div>
+                    <div class="text-levels-gray text-sm">Ultra-lightweight</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-levels-dark mb-2">IP68</div>
+                    <div class="text-levels-gray text-sm">Waterproof</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-levels-dark mb-2">$149</div>
+                    <div class="text-levels-gray text-sm">One-time purchase</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="section-padding">
+        <div class="levels-container">
+            <div class="max-w-4xl mx-auto text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    Built for the professionals who can't wear traditional trackers
+                </h2>
+                <p class="text-xl text-levels-gray leading-relaxed">
+                    18 million healthcare workers must maintain bare-below-elbow protocols. 6 million mechanics risk device damage daily. Millions more seek health insights without screen distractions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-levels-light-gray rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Healthcare Workers</h3>
+                    <p class="text-levels-gray">Bare-below-elbow protocols require devices above the wrist line</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-levels-light-gray rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Industrial Workers</h3>
+                    <p class="text-levels-gray">Protect devices from tools, fluids, and heavy machinery damage</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-levels-light-gray rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Digital Minimalists</h3>
+                    <p class="text-levels-gray">Health insights without another screen demanding attention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section-padding bg-levels-light-gray">
+        <div class="levels-container">
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    Simple as wear, live, learn
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-12 mb-8">
+                        <div class="w-20 h-20 bg-levels-dark rounded-2xl mx-auto flex items-center justify-center text-white text-2xl font-bold">1</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Wear on bicep</h3>
+                    <p class="text-levels-gray">Secure UNSEEN on your upper arm. Hidden under clothing, comfortable for 24/7 wear.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-12 mb-8">
+                        <div class="w-20 h-20 bg-levels-dark rounded-2xl mx-auto flex items-center justify-center text-white text-2xl font-bold">2</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Live your life</h3>
+                    <p class="text-levels-gray">Work, exercise, sleep. UNSEEN tracks everything without interrupting your day.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl p-12 mb-8">
+                        <div class="w-20 h-20 bg-levels-dark rounded-2xl mx-auto flex items-center justify-center text-white text-2xl font-bold">3</div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-levels-dark mb-3">Check when ready</h3>
+                    <p class="text-levels-gray">Open the app on your schedule to see insights, not when a screen demands attention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section-padding">
+        <div class="levels-container">
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    Everything you need. Nothing you don't.
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-levels-dark mb-4">Vitality Score</h3>
+                    <p class="text-levels-gray mb-6 leading-relaxed">
+                        Based on breakthrough NTNU research tracking 1 million people. Your Vitality Score measures fitness relative to biological age. Score 100 for 25% lower mortality risk and up to 13 extra years of healthy life.
+                    </p>
+                    <div class="bg-levels-light-gray rounded-2xl p-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-levels-dark mb-2">Score: 85</div>
+                            <div class="text-levels-gray text-sm">[Vitality Score Visualization]</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-levels-dark mb-4">Complete Health Picture</h3>
+                    <p class="text-levels-gray mb-6 leading-relaxed">
+                        Medical-grade sensors track heart rate, HRV, SpO2, sleep stages, and activity. Advanced algorithms provide readiness scores and sedentary reminders without interrupting your workflow.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-levels-light-gray rounded-xl">
+                            <span class="text-levels-dark font-medium">Heart Rate</span>
+                            <span class="text-levels-gray">72 bpm</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-levels-light-gray rounded-xl">
+                            <span class="text-levels-dark font-medium">Sleep Quality</span>
+                            <span class="text-levels-gray">85%</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-levels-light-gray rounded-xl">
+                            <span class="text-levels-dark font-medium">Readiness</span>
+                            <span class="text-levels-gray">Good</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science -->
+    <section id="science" class="section-padding bg-levels-light-gray">
+        <div class="levels-container">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                        Backed by the largest fitness study ever
+                    </h2>
+                    <p class="text-xl text-levels-gray mb-8 leading-relaxed">
+                        Our Vitality Score comes from NTNU's HUNT study—the world's largest health research project tracking over 1 million people across decades.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-levels-dark mb-1">25%</div>
+                            <div class="text-levels-gray text-sm">Lower death risk</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-levels-dark mb-1">40%</div>
+                            <div class="text-levels-gray text-sm">Less heart disease</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-levels-dark mb-1">13 years</div>
+                            <div class="text-levels-gray text-sm">Extra healthy life</div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="border-l-4 border-levels-dark pl-6 italic text-levels-gray">
+                        "The Vitality Score is the single best predictor of long-term health outcomes we have."
+                        <cite class="block mt-2 not-italic text-sm text-levels-gray">— CERG researchers, NTNU</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-12">
+                    <div class="aspect-square bg-levels-light-gray rounded-2xl flex items-center justify-center">
+                        <div class="text-center">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mx-auto mb-4 text-levels-gray">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                            </svg>
+                            <div class="text-levels-gray text-sm">Research visualization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section-padding">
+        <div class="levels-container">
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    How UNSEEN compares
+                </h2>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th class="text-left py-4 text-levels-dark font-semibold"></th>
+                            <th class="text-center py-4 text-levels-dark font-semibold">UNSEEN</th>
+                            <th class="text-center py-4 text-levels-gray">Whoop</th>
+                            <th class="text-center py-4 text-levels-gray">Oura Ring</th>
+                            <th class="text-center py-4 text-levels-gray">Apple Watch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4 text-levels-dark font-medium">Price</td>
+                            <td class="py-4 text-center font-semibold text-levels-dark">$149 once</td>
+                            <td class="py-4 text-center text-levels-gray">$30/month</td>
+                            <td class="py-4 text-center text-levels-gray">$299-549</td>
+                            <td class="py-4 text-center text-levels-gray">$249+</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4 text-levels-dark font-medium">Subscription</td>
+                            <td class="py-4 text-center font-semibold text-green-600">Never</td>
+                            <td class="py-4 text-center text-red-500">Required</td>
+                            <td class="py-4 text-center text-levels-gray">Optional</td>
+                            <td class="py-4 text-center text-levels-gray">Optional</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4 text-levels-dark font-medium">Bicep-worn</td>
+                            <td class="py-4 text-center text-green-500 text-xl">✓</td>
+                            <td class="py-4 text-center text-green-500 text-xl">✓</td>
+                            <td class="py-4 text-center text-red-500 text-xl">✗</td>
+                            <td class="py-4 text-center text-red-500 text-xl">✗</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="py-4 text-levels-dark font-medium">Screenless</td>
+                            <td class="py-4 text-center text-green-500 text-xl">✓</td>
+                            <td class="py-4 text-center text-green-500 text-xl">✓</td>
+                            <td class="py-4 text-center text-green-500 text-xl">✓</td>
+                            <td class="py-4 text-center text-red-500 text-xl">✗</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 text-levels-dark font-medium">Battery</td>
+                            <td class="py-4 text-center font-semibold text-levels-dark">10 days</td>
+                            <td class="py-4 text-center text-levels-gray">5 days</td>
+                            <td class="py-4 text-center text-levels-gray">7 days</td>
+                            <td class="py-4 text-center text-levels-gray">18 hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-padding bg-levels-light-gray">
+        <div class="levels-container">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    Simple pricing
+                </h2>
+                <p class="text-xl text-levels-gray mb-12">
+                    No subscriptions. No hidden fees. No premium tiers. Just one price, forever.
+                </p>
+                
+                <div class="bg-white rounded-3xl p-12 text-center">
+                    <div class="mb-8">
+                        <div class="flex items-baseline justify-center mb-2">
+                            <span class="text-3xl font-bold text-levels-dark">$</span>
+                            <span class="text-6xl font-bold text-levels-dark">149</span>
+                        </div>
+                        <div class="text-levels-gray">One-time purchase</div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-12 text-left max-w-sm mx-auto">
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">UNSEEN device with 10-day battery</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">iOS & Android apps forever</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">All health metrics and insights</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">Vitality Score based on NTNU research</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">Apple Health & Google Fit sync</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-500">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span class="text-levels-dark">Strava live heart rate</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="bg-levels-dark text-white px-12 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors inline-block">
+                        Pre-order UNSEEN
+                    </a>
+                    
+                    <p class="text-levels-gray text-sm mt-6">
+                        Ships Q2 2025 • 30-day guarantee • Free worldwide shipping
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section-padding">
+        <div class="levels-container">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-levels-dark mb-6 tracking-tight">
+                    Ready for health tracking that stays out of your way?
+                </h2>
+                <p class="text-xl text-levels-gray mb-8">
+                    Join thousands of professionals choosing comprehensive health insights over constant distractions.
+                </p>
+                <a href="#pricing" class="bg-levels-dark text-white px-12 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors inline-block">
+                    Get UNSEEN for $149
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-levels-dark text-white py-20">
+        <div class="levels-container">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">UNSEEN</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The screenless health tracker for professionals.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#science" class="hover:text-white transition-colors">Science</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-12 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 UNSEEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
