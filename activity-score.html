@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Score - The Science Behind UNSEEN</title>
+    <meta name="description" content="Learn about Activity Score (Activity Quotient), the evidence-based metric that powers UNSEEN's health tracking. Based on research with 500,000+ participants.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#117B69">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'unseen-green': '#117B69',
+                        'unseen-green-light': '#14A085',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'figtree': ['Figtree', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+    
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/30">
+    <div class="w-full px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="flex items-center space-x-3">
+                <svg width="32" height="30" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.8545 1.66602C23.9408 1.69353 25.0071 1.80118 26.0479 1.9834L22.3711 5.65918C22.3464 5.65908 22.3216 5.65918 22.2969 5.65918C12.5769 5.65929 4.69738 13.5388 4.69727 23.2588C4.69733 32.9788 12.5769 40.8583 22.2969 40.8584C31.4573 40.8584 38.9811 33.8598 39.8174 24.918L43.7744 20.9609C43.8543 21.716 43.8965 22.4826 43.8965 23.2588L43.8896 23.8164C43.5939 35.488 34.0397 44.8584 22.2969 44.8584L21.7393 44.8516C10.2531 44.5604 0.995118 35.3026 0.704102 23.8164L0.697266 23.2588C0.69738 11.3297 10.3678 1.65929 22.2969 1.65918L22.8545 1.66602Z" fill="currentColor"/>
+                    <path d="M28.132 3.68592C30.0378 1.78009 33.1277 1.78009 35.0336 3.68592L43.2024 11.8548C45.1083 13.7606 45.1083 16.8506 43.2024 18.7564V18.7564C42.8848 19.074 42.3698 19.074 42.0522 18.7564L28.132 4.83619C27.8143 4.51855 27.8143 4.00355 28.132 3.68592V3.68592Z" fill="currentColor"/>
+                </svg>
+                <span class="text-gray-900 font-bold text-2xl font-figtree tracking-wide">UNSEEN</span>
+            </a>
+
+            <!-- Back to Home -->
+            <a href="/" class="text-gray-600 hover:text-gray-900 transition-colors text-sm font-semibold">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-unseen-green/10 rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-unseen-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span class="text-unseen-green text-sm font-medium">Evidence-Based Metric</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Understanding Your Activity Score</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Activity Score, based on research-validated methodology developed by Norwegian researchers, is a revolutionary metric that translates your physical activity into a simple weekly score proven to predict health outcomes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Findings Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">The Science: 500,000 People Can't Be Wrong</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+                    <div class="text-5xl font-bold text-unseen-green mb-2">50</div>
+                    <div class="text-gray-600 mb-4">Weekly Score Target</div>
+                    <p class="text-sm text-gray-500">The minimum score associated with significant health benefits</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+                    <div class="text-5xl font-bold text-unseen-green mb-2">22-26%</div>
+                    <div class="text-gray-600 mb-4">Lower Mortality Risk</div>
+                    <p class="text-sm text-gray-500">Reduction in risk of early death for those achieving 50+ AQ weekly</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+                    <div class="text-5xl font-bold text-unseen-green mb-2">2-4.5</div>
+                    <div class="text-gray-600 mb-4">Years Added</div>
+                    <p class="text-sm text-gray-500">Additional life expectancy for regular AQ achievers</p>
+                </div>
+            </div>
+
+            <div class="bg-unseen-green/5 border border-unseen-green/20 rounded-xl p-8">
+                <p class="text-center text-gray-700 italic">
+                    "In the largest activity study of its kind, participants who achieved weekly activity scores of 50 or higher lived significantly longer, with remarkable benefits across all demographics."
+                </p>
+                <p class="text-center text-sm text-gray-500 mt-4">
+                    — Based on research published in Progress in Cardiovascular Diseases, 2025
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">How Activity Score Works</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">The Science Behind the Score</h3>
+                    <p class="text-gray-600 mb-6">
+                        Activity Score uses sophisticated algorithms based on peer-reviewed research that go beyond simple step counting or calorie estimates. It incorporates:
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-unseen-green mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Heart Rate Response:</strong> How your heart responds to different activity intensities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-unseen-green mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Individual Variability:</strong> Your personal fitness level and health status</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-unseen-green mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Age-Adjusted Risk:</strong> Robust estimates based on your age group</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-unseen-green mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Intensity Weighting:</strong> Higher intensity activities contribute more points</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h4 class="font-semibold mb-4">Your Weekly Score Calculation</h4>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-600">Light Activity (Walking)</span>
+                                <span class="text-sm font-medium">2.5 METs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-unseen-green/40 h-2 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-600">Moderate (Brisk Walking)</span>
+                                <span class="text-sm font-medium">4.5 METs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-unseen-green/60 h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-600">Vigorous (Jogging)</span>
+                                <span class="text-sm font-medium">6.5 METs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-unseen-green/80 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-600">High-Vigorous (Running)</span>
+                                <span class="text-sm font-medium">8.5 METs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-unseen-green h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score Ranges -->
+            <div class="bg-gradient-to-r from-gray-50 to-unseen-green/10 rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6">Understanding Your Activity Score Range</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="text-3xl font-bold text-gray-400 mb-2">0</div>
+                        <div class="font-semibold mb-2">Inactive</div>
+                        <p class="text-sm text-gray-600">No tracked physical activity. Higher health risks.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="text-3xl font-bold text-yellow-600 mb-2">1-49</div>
+                        <div class="font-semibold mb-2">Some Activity</div>
+                        <p class="text-sm text-gray-600">Some health benefits, but below optimal threshold.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 border-2 border-unseen-green">
+                        <div class="text-3xl font-bold text-unseen-green mb-2">50-99</div>
+                        <div class="font-semibold mb-2">Health Threshold</div>
+                        <p class="text-sm text-gray-600">Significant mortality reduction and health benefits.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="text-3xl font-bold text-unseen-green mb-2">100-149</div>
+                        <div class="font-semibold mb-2">Optimal Range</div>
+                        <p class="text-sm text-gray-600">Maximum health benefits for most people.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="text-3xl font-bold text-unseen-green-light mb-2">150-199</div>
+                        <div class="font-semibold mb-2">High Activity</div>
+                        <p class="text-sm text-gray-600">Peak benefits, ideal for athletic individuals.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="text-3xl font-bold text-unseen-green-light mb-2">200+</div>
+                        <div class="font-semibold mb-2">Very High</div>
+                        <p class="text-sm text-gray-600">Elite athlete level, sustained benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Evidence Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">The Research Behind Activity Score</h2>
+            
+            <div class="prose prose-lg max-w-4xl mx-auto mb-12">
+                <p class="text-gray-600">
+                    The methodology that powers UNSEEN's Activity Score was developed by Norwegian researchers and validated in one of the largest prospective cohort studies ever conducted, following over 515,000 participants for a median of 16.8 years.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl p-8">
+                    <h3 class="text-xl font-bold mb-4">Cardiovascular Benefits</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">50 points/week</span>
+                            <span class="font-semibold text-unseen-green">12% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">100-149 points/week</span>
+                            <span class="font-semibold text-unseen-green">19% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">150-199 points/week</span>
+                            <span class="font-semibold text-unseen-green">29% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">200+ points/week</span>
+                            <span class="font-semibold text-unseen-green">27% lower risk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8">
+                    <h3 class="text-xl font-bold mb-4">Cancer Prevention</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">50 points/week</span>
+                            <span class="font-semibold text-unseen-green">7% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">100-149 points/week</span>
+                            <span class="font-semibold text-unseen-green">16% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3 border-b">
+                            <span class="text-gray-600">150-199 points/week</span>
+                            <span class="font-semibold text-unseen-green">16% lower risk</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">200+ points/week</span>
+                            <span class="font-semibold text-unseen-green">19% lower risk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-unseen-green text-white rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-4">Key Finding: Even Small Amounts Matter</h3>
+                <p class="text-white/90 mb-4">
+                    The research showed that even achieving 15-25 points per week (equivalent to about 15 minutes of moderate exercise daily) was associated with meaningful health benefits. This makes Activity Score accessible to everyone, regardless of fitness level.
+                </p>
+                <div class="grid grid-cols-3 gap-4 mt-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">84.4%</div>
+                        <div class="text-white/80 text-sm">of active people score <100 points</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">15.6%</div>
+                        <div class="text-white/80 text-sm">achieve ≥100 points weekly</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">7.5%</div>
+                        <div class="text-white/80 text-sm">reach optimal 100-149 points</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Examples Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">How to Reach 50 Activity Score Points Per Week</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Walker</h3>
+                    <p class="text-gray-600 mb-4">150 minutes of brisk walking per week</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Mon-Fri:</span>
+                            <span>30 min brisk walk</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Weekend:</span>
+                            <span>Rest or light activity</span>
+                        </div>
+                        <div class="pt-2 border-t">
+                            <span class="font-semibold text-unseen-green">Weekly Score: ~50-60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Mixed Mover</h3>
+                    <p class="text-gray-600 mb-4">Combination of activities</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">3x week:</span>
+                            <span>20 min jog</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">2x week:</span>
+                            <span>30 min walk</span>
+                        </div>
+                        <div class="pt-2 border-t">
+                            <span class="font-semibold text-unseen-green">Weekly Score: ~80-100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">The Intensity Seeker</h3>
+                    <p class="text-gray-600 mb-4">High-intensity focused</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">3x week:</span>
+                            <span>25 min running</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-500">Daily:</span>
+                            <span>Light movement</span>
+                        </div>
+                        <div class="pt-2 border-t">
+                            <span class="font-semibold text-unseen-green">Weekly Score: ~120-150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-50 rounded-xl p-8">
+                <h3 class="text-xl font-bold mb-4">Remember: Intensity Matters</h3>
+                <p class="text-gray-600 mb-6">
+                    Activity Score rewards intensity because your heart's response to vigorous activity provides greater health benefits. Here's how different activities compare:
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold mb-3">Lower Intensity (Fewer points/minute)</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Casual walking</li>
+                            <li>• Light housework</li>
+                            <li>• Gentle yoga</li>
+                            <li>• Easy cycling</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3">Higher Intensity (More points/minute)</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>• Running or jogging</li>
+                            <li>• Swimming laps</li>
+                            <li>• HIIT workouts</li>
+                            <li>• Competitive sports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-unseen-green text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Start Tracking Your Activity Score</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join thousands who are already using Activity Score to optimize their health and add years to their life. No subscription required.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="bg-white text-unseen-green hover:bg-gray-100 transition-colors px-8 py-3 rounded-xl font-semibold inline-block">
+                    Learn More About UNSEEN
+                </a>
+                <a href="/#waitlist" class="border border-white/40 hover:border-white/60 transition-colors px-8 py-3 rounded-xl font-semibold inline-block">
+                    Join Waitlist
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-500 text-sm mb-4">
+                © 2024 UNSEEN Health. All rights reserved.
+            </p>
+            <p class="text-gray-400 text-xs max-w-2xl mx-auto">
+                Activity Score is based on research methodology developed by Norwegian researchers and validated in peer-reviewed research published in Progress in Cardiovascular Diseases (2025).
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
