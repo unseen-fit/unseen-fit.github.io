@@ -1,0 +1,220 @@
+    <!-- Device Features Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Precision engineered for professionals</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Every detail of UNSEEN is designed to deliver medical-grade health tracking that works in the real
+                    world.
+                </p>
+            </div>
+
+            <!-- Product Gallery -->
+            <div class="grid grid-cols-12 gap-4">
+                <!-- Thumbnail Column -->
+                <div class="col-span-1 space-y-2">
+                    <button class="gallery-thumb w-30 h-30 bg-white rounded-lg overflow-hidden relative group"
+                        data-image="img/device/front-oblique.jpeg" data-alt="UNSEEN front oblique view"
+                        data-object-fit="contain">
+                        <img src="img/device/front-oblique.jpeg" alt="UNSEEN front oblique view"
+                            class="w-full h-full object-cover">
+                        <div class="thumb-overlay absolute inset-0 bg-black opacity-0"></div>
+                    </button>
+                    <button class="gallery-thumb w-30 h-30 bg-white rounded-lg overflow-hidden relative group active"
+                        data-image="img/device/front.jpeg" data-alt="UNSEEN front view" data-object-fit="contain">
+                        <img src="img/device/front.jpeg" alt="UNSEEN front view" class="w-full h-full object-cover">
+                        <div class="thumb-overlay absolute inset-0 bg-black opacity-10"></div>
+                    </button>
+                    <button class="gallery-thumb w-30 h-30 bg-white rounded-lg overflow-hidden relative group"
+                        data-image="img/device/back.jpeg" data-alt="UNSEEN back sensor view" data-object-fit="contain">
+                        <img src="img/device/back.jpeg" alt="UNSEEN back sensor view"
+                            class="w-full h-full object-cover">
+                        <div class="thumb-overlay absolute inset-0 bg-black opacity-0"></div>
+                    </button>
+                    <button class="gallery-thumb w-30 h-30 bg-white rounded-lg overflow-hidden relative group"
+                        data-image="img/device/back-oblique.jpeg" data-alt="UNSEEN back oblique view"
+                        data-object-fit="contain">
+                        <img src="img/device/back-oblique.jpeg" alt="UNSEEN back oblique view"
+                            class="w-full h-full object-cover">
+                        <div class="thumb-overlay absolute inset-0 bg-black opacity-0"></div>
+                    </button>
+                </div>
+
+                <!-- Main Image -->
+                <div class="col-span-6">
+                    <div class="bg-neutral-100 rounded-xl overflow-hidden h-[600px] relative group">
+                        <img id="main-product-image" src="img/device/front.jpeg" alt="UNSEEN health tracker main view"
+                            class="w-full h-full object-contain transition-opacity duration-300">
+
+                        <!-- Navigation Buttons -->
+                        <div class="absolute bottom-4 right-4 flex space-x-2">
+                            <button id="prev-btn"
+                                class="w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-sm flex items-center justify-center transition-colors">
+                                <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+
+                            <button id="next-btn"
+                                class="w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-sm flex items-center justify-center transition-colors">
+                                <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-span-5 pl-6">
+                    <h3 class="text-3xl font-bold mb-6">UNSEEN Health Tracker</h3>
+
+                    <!-- Key Features -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-unseen-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Ultra-Lightweight Design</div>
+                                <div class="text-gray-600">Just 8.6g - lighter than two quarters</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-unseen-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">10-Day Battery Life</div>
+                                <div class="text-gray-600">90mAh battery with magnetic charging</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-unseen-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">IP68 Waterproof</div>
+                                <div class="text-gray-600">Swim-proof and sweat-resistant</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-unseen-green rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Medical-Grade Sensors</div>
+                                <div class="text-gray-600">PPG heart rate, SpO2, dual motion sensors</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="bg-gray-100 rounded-xl p-6 mb-8">
+                        <h4 class="font-semibold mb-4">Technical Specifications</h4>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <div class="text-gray-600">Dimensions</div>
+                                <div class="font-medium">45 x 35 x 12mm</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600">Weight</div>
+                                <div class="font-medium">8.6g (device only)</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600">Battery</div>
+                                <div class="font-medium">90mAh Li-Po</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600">Connectivity</div>
+                                <div class="font-medium">Bluetooth 5.0 BLE</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600">Water Resistance</div>
+                                <div class="font-medium">IP68 (50m)</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-600">Materials</div>
+                                <div class="font-medium">ABS+PC, Nylon strap</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Features Grid -->
+            <div class="grid md:grid-cols-4 gap-6 mt-16">
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Hypoallergenic</h4>
+                    <p class="text-gray-600 text-sm">Safe for sensitive skin and 24/7 wear</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Always On</h4>
+                    <p class="text-gray-600 text-sm">Continuous tracking with multi-day storage</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Built Tough</h4>
+                    <p class="text-gray-600 text-sm">Resists impacts and harsh chemicals</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-semibold mb-2">Universal Fit</h4>
+                    <p class="text-gray-600 text-sm">One-size adjustable strap fits all</p>
+                </div>
+            </div>
+        </div>
+    </section>

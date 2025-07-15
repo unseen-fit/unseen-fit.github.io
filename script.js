@@ -664,10 +664,33 @@ function handleEmailForms() {
     });
 }
 
+// Background image carousel functionality
+function initializeCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Change slide every 4 seconds
+    setInterval(nextSlide, 4000);
+}
+
 // Initialize all functionality
 document.addEventListener('DOMContentLoaded', function () {
     handleCTAClicks();
     handleEmailForms();
+    initializeCarousel();
 
     // Set up scroll listener for floating CTA
     window.addEventListener('scroll', handleFloatingCTA);
