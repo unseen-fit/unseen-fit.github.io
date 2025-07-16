@@ -218,3 +218,147 @@
             </div>
         </div>
     </section>
+
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Built for everyone, designed for life</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Whether you're a watch enthusiast, healthcare worker, athlete, or digital minimalist, UNSEEN works
+                        where
+                        wrist trackers can't.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Worker Gallery -->
+            <div class="flex gap-2 overflow-x-auto overflow-y-hidden pl-4">
+                <!-- Nurse -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/nurse-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/nurse-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/nurse-640.webp 640w" sizes="640px">
+                        <img src="img/people/nurse-960.webp" alt="Nurse working with UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Sarah M.</h3>
+                        <p class="text-sm text-gray-300 mb-3">Nurse</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "As a nurse, I can't wear anything below my elbows due to infection control. UNSEEN lets me
+                            track my
+                            health during long shifts without violating protocols."
+                        </blockquote>
+                    </div>
+                </div>
+    
+                <!-- Construction Worker -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/construction-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/construction-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/construction-640.webp 640w" sizes="640px">
+                        <img src="img/people/construction-960.webp" alt="Construction worker with UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Mike R.</h3>
+                        <p class="text-sm text-gray-300 mb-3">Construction Worker</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "On construction sites, wrist trackers get damaged by tools and debris. UNSEEN stays protected
+                            and
+                            tracks my activity through tough workdays."
+                        </blockquote>
+                    </div>
+                </div>
+    
+                <!-- Watch Enthusiast -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/classic-watch-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/classic-watch-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/classic-watch-640.webp 640w" sizes="640px">
+                        <img src="img/people/classic-watch-960.webp" alt="Watch enthusiast wearing UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Emma C.</h3>
+                        <p class="text-sm text-gray-300 mb-3">Marketing Professional</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "I've always worn analog watches - they just feel right to me. UNSEEN means I don't have to
+                            choose
+                            between that and tracking my health."
+                        </blockquote>
+                    </div>
+                </div>
+    
+                <!-- Construction Carpenter -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/carpenter-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/carpenter-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/carpenter-640.webp 640w" sizes="640px">
+                        <img src="img/people/carpenter-960.webp" alt="Construction carpenter working with UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Dave K.</h3>
+                        <p class="text-sm text-gray-300 mb-3">Construction Carpenter</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "Working with power tools and heavy machinery, wrist devices are a safety hazard. UNSEEN tracks
+                            my
+                            health without interfering with my work."
+                        </blockquote>
+                    </div>
+                </div>
+    
+                <!-- BJJ Practitioner -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/bjj-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/bjj-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/bjj-640.webp 640w" sizes="640px">
+                        <img src="img/people/bjj-960.webp" alt="BJJ practitioner training with UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Alex T.</h3>
+                        <p class="text-sm text-gray-300 mb-3">BJJ Enthusiast</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "When grappling, wrist trackers can get caught or damaged. UNSEEN lets me track my training
+                            sessions
+                            without worrying about my gear."
+                        </blockquote>
+                    </div>
+                </div>
+    
+    
+                <!-- Chef -->
+                <div class="relative w-96 h-[600px] overflow-hidden group flex-shrink-0">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="img/people/chef-320.webp 320w" sizes="320px">
+                        <source media="(max-width: 640px)" srcset="img/people/chef-480.webp 480w" sizes="480px">
+                        <source media="(max-width: 960px)" srcset="img/people/chef-640.webp 640w" sizes="640px">
+                        <img src="img/people/chef-960.webp" alt="Chef cooking with UNSEEN device"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-1">Marcus L.</h3>
+                        <p class="text-sm text-gray-300 mb-3">Executive Chef</p>
+                        <blockquote class="text-white/90 text-sm italic leading-relaxed">
+                            "When prepping meat and working long shifts, wrist devices get in the way of knife work. UNSEEN
+                            tracks my vitals during busy service without interfering."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
