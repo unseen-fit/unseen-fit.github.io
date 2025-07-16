@@ -145,47 +145,80 @@
     </section>
 
     <!-- Product Overview Section -->
-    <section class="py-16 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-2 items-center">
+    <section class="py-16 px-8">
+        <div class="max-w-full mx-auto">
+            <div class="grid lg:grid-cols-2 gap-2 items-start">
                 <!-- Left Column - Product Image -->
-                <div class="lg:col-span-1">
-                    <img src="img/device/front.png" alt="UNSEEN front view" class="w-full scale-110">
+                <div class="lg:col-span-1 relative">
+                    <div class="relative flex justify-center overflow-hidden">
+                        <img src="img/device/front.png" alt="UNSEEN front view" class="w-full h-auto translate-x-36">
+                    </div>
                 </div>
 
                 <!-- Right Column - Content -->
-                <div class="lg:col-span-1 space-y-4">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Built for everyone. Designed for
-                            life.</h2>
-                        <p class="text-xl text-gray-600 leading-relaxed">
-                            The unseen wearable device is designed for 24/7 wear on the upper arm. It continuously
-                            measures your health data and transmits them to your mobile - where the data are analysed
-                            and presented to you via the unseen mobile app.
-                        </p>
+                <div class="lg:col-span-1 space-y-12">
+                    <!-- Text Content -->
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
+                                Built for everyone.<br>
+                                <span class="text-gray-600">Designed for life.</span>
+                            </h2>
+                            <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+                                The unseen wearable device is designed for 24/7 wear on the upper arm. It continuously
+                                measures your health data and transmits them to your mobile - where the data are
+                                analysed
+                                and presented to you via the unseen mobile app.
+                            </p>
+                        </div>
+
+                        <!-- Specifications Grid -->
+                        <div class="grid grid-cols-2 gap-x-12 gap-y-8">
+                            <div class="space-y-2">
+                                <div class="text-3xl font-semibold text-gray-900">10 Days</div>
+                                <div class="text-lg text-gray-500 font-medium">Battery Life</div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="text-3xl font-semibold text-gray-900">8.6g</div>
+                                <div class="text-lg text-gray-500 font-medium">Ultra-lightweight</div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="text-3xl font-semibold text-gray-900">IP68</div>
+                                <div class="text-lg text-gray-500 font-medium">Water Resistant</div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="text-3xl font-semibold text-gray-900">24/7</div>
+                                <div class="text-lg text-gray-500 font-medium">Continuous Tracking</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Specifications Grid -->
-                    <div class="grid grid-cols-2 gap-8">
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900 mb-2">10 Days</div>
-                            <div class="text-gray-600">Battery Life</div>
-                        </div>
 
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900 mb-2">8.6g</div>
-                            <div class="text-gray-600">Ultra-lightweight</div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900 mb-2">IP68</div>
-                            <div class="text-gray-600">Water Resistant</div>
-                        </div>
+    <!-- Strap Section -->
+    <section class="py-16 px-8">
+        <div class="max-w-full mx-auto">
+            <div class="relative flex justify-center items-center min-h-[600px]">
+                <!-- Background Image -->
+                <div class="relative">
+                    <img src="img/device/side.335.png" alt="UNSEEN side view showing charging port"
+                        class="w-full h-auto max-w-full">
 
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900 mb-2">24/7</div>
-                            <div class="text-gray-600">Continuous Tracking</div>
-                        </div>
+                    <!-- Overlay Text -->
+                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                        <h2 class="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Woven into your life.
+                        </h2>
+                        <p class="text-xl md:text-xl text-gray-600 font-light max-w-lg">
+                            Soft durable nylon loop strap with buckle-velcro closure for a secure comfortable 24/7 fit.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -335,6 +368,1127 @@
         </div>
     </section>
 
+    <!-- Sleep Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/sleep.png" alt="Sleep scene" class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-center">
+            <div class="text-center px-4 max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Rest Better,<br>
+                    <span class="text-white/80">Live Better</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+                    Track your sleep patterns and recovery with precision. UNSEEN monitors your rest so you can wake up
+                    ready for anything.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sensors Section -->
+    <section class="h-[1000px] py-16 px-8">
+        <div class="max-w-full mx-auto h-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center h-full">
+                <!-- Left Column - Sensors Image -->
+                <div class="lg:col-span-1 relative h-full flex justify-center items-center">
+                    <div class="relative overflow-hidden">
+                        <img src="img/device/sensors.334.png" alt="UNSEEN medical-grade sensors"
+                            class="w-full h-auto max-w-lg">
+                    </div>
+                </div>
+
+                <!-- Right Column - Sensors Content -->
+                <div class="lg:col-span-1 space-y-12">
+                    <!-- Main Heading -->
+                    <div>
+                        <div class="text-unseen-green text-sm font-semibold tracking-wider uppercase mb-4">
+                            MEDICAL-GRADE SENSORS
+                        </div>
+                        <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
+                            Precision You<br>
+                            <span class="text-gray-600">Can Trust.</span>
+                        </h2>
+                        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light mb-12">
+                            Clinical-grade sensor technology delivers hospital-quality measurements in a wearable that
+                            never gets in your way.
+                        </p>
+                    </div>
+
+                    <!-- Sensor Features -->
+                    <div class="space-y-8">
+                        <!-- PPG Heart Rate -->
+                        <div class="border-l-4 border-unseen-green pl-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">FDA-Approved PPG Heart Rate</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Our photoplethysmography sensor has FDA clearance for medical-grade heart rate
+                                monitoring.
+                                Multi-wavelength LED technology provides accuracy within ±1 BPM across all skin tones
+                                and activity levels.
+                            </p>
+                        </div>
+
+                        <!-- SpO2 Monitoring -->
+                        <div class="border-l-4 border-blue-500 pl-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Clinical SpO2 Monitoring</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Continuous blood oxygen saturation tracking using dual-wavelength infrared technology.
+                                Hospital-grade precision for sleep apnea detection and altitude training optimization.
+                            </p>
+                        </div>
+
+                        <!-- Motion Sensors -->
+                        <div class="border-l-4 border-purple-500 pl-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Dual Motion Sensors</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                6-axis accelerometer and gyroscope combination eliminates motion artifacts from heart
+                                rate readings.
+                                Advanced algorithms distinguish between arm movement and cardiovascular signals with
+                                99.7% accuracy.
+                            </p>
+                        </div>
+
+                        <!-- Medical Grade Precision -->
+                        <div
+                            class="bg-gradient-to-br from-unseen-green/5 to-unseen-green-light/5 border border-unseen-green/10 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Medical-Grade Data Quality</h3>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Heart Rate Accuracy:</span>
+                                        <span class="font-semibold text-gray-900">±1 BPM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">SpO2 Accuracy:</span>
+                                        <span class="font-semibold text-gray-900">±2%</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">HRV Precision:</span>
+                                        <span class="font-semibold text-gray-900">1ms resolution</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Sampling Rate:</span>
+                                        <span class="font-semibold text-gray-900">128Hz</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Index Section -->
+    <section class="relative h-[1300px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/boxing.png" alt="Professional chef at work" class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="px-8 lg:px-16 max-w-4xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Activity Index</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Beyond Calories:<br>
+                    <span class="text-white/80">Real Activity That Matters</span>
+                </h2>
+
+                <div class="space-y-4 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
+                        Based on research with 1+ million participants, Activity Index moves beyond calories to measure
+                        what actually predicts health outcomes and longevity.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed max-w-2xl">
+                        Every movement counts—from workplace demands to daily activities. Unlike calories,
+                        our metric values real-world intensity patterns that extend lifespan.
+                    </p>
+                </div>
+
+                <!-- Research Highlights -->
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-2xl font-bold text-white mb-1">1M+</div>
+                        <div class="text-white/80 text-sm">Research Participants</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-2xl font-bold text-white mb-1">50+</div>
+                        <div class="text-white/80 text-sm">Weekly Target Score</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-2xl font-bold text-white mb-1">24/7</div>
+                        <div class="text-white/80 text-sm">Continuous Tracking</div>
+                    </div>
+                </div>
+
+                <!-- Key Differences -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 max-w-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Why Activity Index Beats Calories:</h3>
+                    <div class="space-y-2 text-white/90 text-sm">
+                        <div class="flex items-start gap-2">
+                            <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                            <div><span class="font-medium">Predicts longevity</span> better than calorie burn</div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                            <div><span class="font-medium">Values workplace activity</span> not just gym time</div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                            <div><span class="font-medium">Personalizes to your fitness level</span> and health status
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vital Signs Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/ManOnYogaMat.png" alt="Man practicing yoga with health monitoring"
+                class="w-full h-full object-cover">
+            <!-- Subtle dark overlay for text readability -->
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-center">
+            <div class="text-center px-4 max-w-3xl mx-auto">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Vital Signs Monitoring</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Complete Health<br>
+                    <span class="text-white/80">Visibility</span>
+                </h2>
+
+                <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl mx-auto">
+                    UNSEEN delivers comprehensive vital signs monitoring that transforms your device into a
+                    personal health companion, tracking the metrics that matter most.
+                </p>
+
+                <!-- Vital Signs Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">Heart Rate</div>
+                        <div class="text-white/70 text-sm">Continuous BPM</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">HRV</div>
+                        <div class="text-white/70 text-sm">Recovery Insights</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">SpO2</div>
+                        <div class="text-white/70 text-sm">Blood Oxygen</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">Blood Pressure</div>
+                        <div class="text-white/70 text-sm">Trend Analysis</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">VO2 Max</div>
+                        <div class="text-white/70 text-sm">Fitness Level</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <div class="text-xl font-bold text-white mb-1">Stress</div>
+                        <div class="text-white/70 text-sm">Real-time Score</div>
+                    </div>
+                </div>
+
+                <!-- Bottom message -->
+                <div class="mt-8">
+                    <p class="text-base md:text-lg text-white/80 max-w-xl mx-auto">
+                        More than fitness tracking—UNSEEN is your personal health monitoring system,
+                        delivering medical-grade insights wherever life takes you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biological Age Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/mountain.png" alt="Person standing on mountain peak"
+                class="w-full h-full object-cover">
+            <!-- Gradient overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-end">
+            <div class="px-8 lg:px-16 pb-16 max-w-4xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Biological Age</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Know Your True Age.<br>
+                    <span class="text-white/80">Extend Your Healthspan.</span>
+                </h2>
+
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Left Column - Main Message -->
+                    <div class="space-y-6">
+                        <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                            UNSEEN combines all your vital signs, activity patterns, and recovery metrics
+                            to estimate your biological age—revealing how your body is truly aging
+                            compared to your chronological years.
+                        </p>
+
+                        <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                            Based on longitudinal research with 1+ million participants, our algorithms
+                            don't just measure—they guide you toward actionable changes that extend healthspan.
+                        </p>
+
+                        <!-- Key Benefits -->
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                                <div class="text-white/90 text-sm">
+                                    <span class="font-medium">Personalized aging insights</span> from comprehensive
+                                    biomarker analysis
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                                <div class="text-white/90 text-sm">
+                                    <span class="font-medium">Evidence-based recommendations</span> proven to slow
+                                    biological aging
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                                <div class="text-white/90 text-sm">
+                                    <span class="font-medium">Track improvements over time</span> as lifestyle changes
+                                    take effect
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Age Comparison -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-4">Your Aging Profile</h3>
+
+                        <!-- Age Comparison -->
+                        <div class="space-y-4 mb-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-white/80 text-sm">Chronological Age</span>
+                                <span class="text-2xl font-bold text-white">35</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white/80 text-sm">Biological Age</span>
+                                <span class="text-2xl font-bold text-green-400">32</span>
+                            </div>
+                            <div class="h-px bg-white/20"></div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white/80 text-sm">Years Younger</span>
+                                <span class="text-xl font-bold text-green-400">-3</span>
+                            </div>
+                        </div>
+
+                        <!-- Top Recommendations -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-white mb-3">This Week's Focus:</h4>
+                            <div class="space-y-2 text-xs text-white/80">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Improve sleep consistency by 15 minutes</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-yellow-400 rounded-full"></div>
+                                    <span>Increase HRV with 2 extra recovery days</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-blue-400 rounded-full"></div>
+                                    <span>Add 10 minutes daily walking activity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bicep Placement Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/kettlebell.png" alt="Woman training with kettlebell"
+                class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="px-8 lg:px-16 max-w-3xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Bicep Placement</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Train Without<br>
+                    <span class="text-white/80">Compromise</span>
+                </h2>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                        Bicep placement delivers superior sensor accuracy while keeping your hands completely free.
+                        Train with kettlebells, lift weights, or perform any exercise without device interference.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                        Wrist devices create movement artifacts and restrict grip positions. UNSEEN's bicep location
+                        provides cleaner readings and unrestricted movement for optimal training performance.
+                    </p>
+                </div>
+
+                <!-- Advantages Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Accuracy Column -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Superior Accuracy</h3>
+                        <div class="space-y-2 text-white/90 text-sm">
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Stable sensor contact</strong> with minimal movement artifacts</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Cleaner heart rate signals</strong> during dynamic movements</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Precise HRV measurements</strong> unaffected by wrist flexion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercise Freedom Column -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Exercise Freedom</h3>
+                        <div class="space-y-2 text-white/90 text-sm">
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Kettlebell training</strong> without wrist obstruction</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Unrestricted grip positions</strong> for all lifting movements</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>No device damage risk</strong> from impacts or collisions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Message -->
+                <div class="mt-8">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 max-w-2xl">
+                        <p class="text-white/90 text-sm">
+                            <strong>The difference is clear:</strong> While wrist devices force you to modify your
+                            training or remove them entirely,
+                            UNSEEN lets you train naturally while capturing better data. Your workout, uncompromised.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automatic Tracking Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/ball.png" alt="Basketball player in action" class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-l from-black/60 via-black/30 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-end">
+            <div class="px-8 lg:px-16 max-w-3xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Automatic Detection</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Every Movement.<br>
+                    <span class="text-white/80">Captured Automatically.</span>
+                </h2>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                        UNSEEN intelligently detects exercise 24/7 by monitoring changes in motion patterns and heart
+                        rate.
+                        No buttons to press, no workouts to start—just live your life and let UNSEEN capture it all.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                        Whether you're playing basketball, climbing stairs, or chasing your kids, heart rate tells the
+                        real story.
+                        Activity type doesn't matter—intensity does, and UNSEEN measures what counts.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="space-y-4 mb-8">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Smart Activity Recognition</h3>
+                        <div class="space-y-2 text-white/90 text-sm">
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Motion + heart rate fusion</strong> automatically identifies exercise
+                                    periods</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>24/7 monitoring</strong> captures spontaneous activities and structured
+                                    workouts</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-orange-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Universal detection</strong> works for any activity that elevates heart
+                                    rate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">No Manual Input Required</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="space-y-2 text-white/90 text-sm">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Basketball</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Running</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Weightlifting</span>
+                                </div>
+                            </div>
+                            <div class="space-y-2 text-white/90 text-sm">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Dancing</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Yard work</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1 h-1 bg-green-400 rounded-full"></div>
+                                    <span>Any movement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Message -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                    <p class="text-white/90 text-sm">
+                        <strong>Forget about forgetting:</strong> Never miss tracking a workout again. UNSEEN's
+                        intelligent algorithms
+                        ensure every moment of elevated activity contributes to your health insights, automatically.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waterproof Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/swiming.png" alt="Swimmer in pool showing waterproof capability"
+                class="w-full h-full object-cover">
+            <!-- Subtle overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-center">
+            <div class="text-center px-4 max-w-4xl mx-auto">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">IP68 Waterproof</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Never Miss a Beat.<br>
+                    <span class="text-white/80">Even Underwater.</span>
+                </h2>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                        With IP68 waterproof protection, UNSEEN goes everywhere you do—from daily showers to competitive
+                        swimming.
+                        True 24/7 lifestyle monitoring means never removing your device or missing valuable health data.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
+                        Capture every swim stroke, water workout, and aquatic adventure while maintaining the same
+                        precision heart rate and activity tracking you rely on during land-based activities.
+                    </p>
+                </div>
+
+                <!-- Waterproof Benefits Grid -->
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <div
+                            class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">IP68 Protection</h3>
+                        <p class="text-white/80 text-sm">Submersible up to 1.5 meters for 30 minutes. Pool, ocean,
+                            shower safe.</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <div
+                            class="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Water Activity Tracking</h3>
+                        <p class="text-white/80 text-sm">Captures swimming, water aerobics, and aquatic workouts with
+                            precision.</p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <div
+                            class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">24/7 Monitoring</h3>
+                        <p class="text-white/80 text-sm">Never remove your device. Complete lifestyle tracking in any
+                            environment.</p>
+                    </div>
+                </div>
+
+                <!-- Water Activities -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 max-w-3xl mx-auto">
+                    <h3 class="text-xl font-bold text-white mb-4">Complete Water Freedom</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white/90 text-sm">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Swimming laps</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Daily showers</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Water aerobics</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Beach activities</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Pool workouts</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Water sports</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Hot tubs</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span>Rain & weather</span>
+                        </div>
+                    </div>
+                    <p class="text-white/80 text-sm mt-4 italic">
+                        "The only fitness tracker that truly goes everywhere with you—no compromises, no exceptions."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wrist Freedom Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/watch.jpg" alt="Professional wearing elegant traditional watch"
+                class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="px-8 lg:px-16 max-w-3xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Invisible & Elegant</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Keep Your Style.<br>
+                    <span class="text-white/80">Gain Your Health.</span>
+                </h2>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                        UNSEEN's upper arm placement frees your wrist for the elegant timepieces you love.
+                        No compromise between sophisticated style and comprehensive health tracking.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                        Completely invisible under clothing—even short sleeves—UNSEEN disappears into your lifestyle.
+                        Set it once, forget it exists, and let it work silently in the background.
+                    </p>
+                </div>
+
+                <!-- Key Benefits -->
+                <div class="space-y-4 mb-8">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Wrist Freedom</h3>
+                        <div class="space-y-2 text-white/90 text-sm">
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-amber-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Wear any watch</strong> from vintage classics to luxury timepieces</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-amber-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Professional appearance</strong> uncompromised by bulky fitness
+                                    tech</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-amber-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>No wrist interference</strong> with jewelry, sleeves, or gloves</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Invisible Design</h3>
+                        <div class="space-y-2 text-white/90 text-sm">
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Hidden under clothing</strong> completely invisible in any outfit</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Ultra-low profile</strong> undetectable even in fitted short
+                                    sleeves</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <div class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <span><strong>Discreet monitoring</strong> no one knows you're tracking health</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Effortless Experience -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                    <h3 class="text-lg font-bold text-white mb-3">Zero Mental Load</h3>
+                    <p class="text-white/90 text-sm leading-relaxed">
+                        <strong>Put it on once, forget it exists.</strong> No daily charging rituals, no remembering to
+                        start workouts,
+                        no choosing between your favorite watch and health tracking. UNSEEN works silently in the
+                        background,
+                        requiring zero thought while delivering comprehensive insights.
+                    </p>
+                </div>
+
+                <!-- Style Statement -->
+                <div class="mt-6">
+                    <p class="text-white/80 text-sm italic">
+                        "Finally, a health tracker that respects your personal style and professional image."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleep Tracking Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/sleep.png" alt="Peaceful sleep tracking with UNSEEN device"
+                class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-end">
+            <div class="px-8 lg:px-16 pb-16 max-w-4xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Sleep Intelligence</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Master Your Sleep.<br>
+                    <span class="text-white/80">Transform Your Days.</span>
+                </h2>
+
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Left Column - Sleep Features -->
+                    <div class="space-y-6">
+                        <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                            UNSEEN tracks every aspect of your sleep—duration, stages, and even daytime naps—providing
+                            objective insights into your sleep patterns and actionable recommendations for improvement.
+                        </p>
+
+                        <!-- Sleep Tracking Features -->
+                        <div class="space-y-4">
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <h3 class="text-lg font-bold text-white mb-3">Complete Sleep Analysis</h3>
+                                <div class="space-y-2 text-white/90 text-sm">
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Sleep stages tracking</strong> Light, Deep, REM, and Awake
+                                            periods</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Duration monitoring</strong> Total sleep time and
+                                            efficiency</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Daytime nap detection</strong> Automatic recognition and
+                                            tracking</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <h3 class="text-lg font-bold text-white mb-3">Sleep Intelligence</h3>
+                                <div class="space-y-2 text-white/90 text-sm">
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Trend analysis</strong> Identifies consistency issues
+                                            objectively</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Quality assessment</strong> Pinpoints exactly where problems
+                                            occur</span>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        <span><strong>Actionable insights</strong> Specific recommendations for
+                                            improvement</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Comfort & Battery -->
+                    <div class="space-y-6">
+                        <!-- Sleep Comfort -->
+                        <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                            <h3 class="text-xl font-bold text-white mb-4">Sleep Comfort</h3>
+                            <div class="space-y-3 text-white/90 text-sm">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-medium">Bicep placement</span><br>
+                                        <span class="text-white/70">No wrist pressure or rolling during sleep</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-medium">Soft woven strap</span><br>
+                                        <span class="text-white/70">Breathable, comfortable for all-night wear</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                    <div>
+                                        <span class="font-medium">10-day battery</span><br>
+                                        <span class="text-white/70">No nightly charging interruptions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sleep Insights Example -->
+                        <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                            <h3 class="text-lg font-bold text-white mb-3">This Week's Sleep Insights</h3>
+                            <div class="space-y-3 text-sm">
+                                <div class="flex justify-between items-center text-white/90">
+                                    <span>Average Sleep Duration</span>
+                                    <span class="text-yellow-400 font-medium">6h 45m</span>
+                                </div>
+                                <div class="flex justify-between items-center text-white/90">
+                                    <span>Sleep Efficiency</span>
+                                    <span class="text-green-400 font-medium">87%</span>
+                                </div>
+                                <div class="flex justify-between items-center text-white/90">
+                                    <span>Deep Sleep</span>
+                                    <span class="text-red-400 font-medium">12%</span>
+                                </div>
+                                <div class="h-px bg-white/20 my-3"></div>
+                                <div class="text-white/80 text-xs">
+                                    <strong>Recommendation:</strong> Increase sleep duration by 30 minutes. Your deep
+                                    sleep is below optimal—try reducing screen time 1 hour before bed.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Message -->
+                <div class="mt-8">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20 max-w-3xl">
+                        <p class="text-white/90 text-sm">
+                            <strong>Sleep without compromise:</strong> Unlike bulky wrist devices that disrupt sleep or
+                            require nightly charging,
+                            UNSEEN provides week-long comfort while capturing every detail of your sleep journey—from
+                            nighttime rest to power naps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Compliance Section -->
+    <section class="relative h-[1000px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="img/scenes/chef.png" alt="Professional chef working with bare forearms"
+                class="w-full h-full object-cover">
+            <!-- Dark overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center">
+            <div class="px-8 lg:px-16 max-w-4xl">
+                <!-- Label -->
+                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.25-1.955a3 3 0 00-4.5-2.545L12 8.25l-1.75-1.25a3 3 0 00-4.5 2.545M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="text-white text-sm font-medium">Professional Compliance</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    Meet Every Protocol.<br>
+                    <span class="text-white/80">Miss Nothing.</span>
+                </h2>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                        Many professions require bare forearms and wrists—from infection control in healthcare to
+                        debris protection in construction. UNSEEN delivers complete health tracking while maintaining
+                        professional compliance and workplace safety standards.
+                    </p>
+
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                        Hidden above the elbow, UNSEEN remains discreet and undetectable while capturing the same
+                        comprehensive data other devices provide. Your profession's requirements, perfectly met.
+                    </p>
+                </div>
+
+                <!-- Professional Use Cases -->
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- Healthcare Professionals -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <h3 class="text-xl font-bold text-white mb-4">Healthcare Professionals</h3>
+                        <div class="space-y-3 text-white/90 text-sm">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Infection control protocols</span><br>
+                                    <span class="text-white/70">Bare below elbows required for hand hygiene
+                                        compliance</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Surgical environments</span><br>
+                                    <span class="text-white/70">No devices allowed below elbow in sterile
+                                        procedures</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Patient safety</span><br>
+                                    <span class="text-white/70">Eliminate contamination risks from wrist devices</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Professionals -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
+                        <h3 class="text-xl font-bold text-white mb-4">Industrial Professionals</h3>
+                        <div class="space-y-3 text-white/90 text-sm">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Debris protection</span><br>
+                                    <span class="text-white/70">Prevent particles and materials from getting
+                                        trapped</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Safety compliance</span><br>
+                                    <span class="text-white/70">Meet OSHA requirements for protective equipment</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                <div>
+                                    <span class="font-medium">Food service standards</span><br>
+                                    <span class="text-white/70">Maintain hygiene protocols in commercial kitchens</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Advantages -->
+                <div class="space-y-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <h3 class="text-lg font-bold text-white mb-3">Professional Advantages</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-white/90 text-sm">
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>Protocol compliant</strong> - meets all workplace safety
+                                        standards</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>Completely hidden</strong> - invisible under professional
+                                        attire</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>Full data capture</strong> - same insights as wrist devices</span>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>No compromise</strong> - health tracking without rule
+                                        violations</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>Career protection</strong> - never risk professional standing</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                    <span><strong>Discrete monitoring</strong> - colleagues remain unaware</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Message -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                        <p class="text-white/90 text-sm">
+                            <strong>Professional integrity maintained:</strong> UNSEEN is the only health tracker
+                            designed for
+                            professionals who can't compromise on workplace standards. Get complete health insights
+                            while
+                            maintaining the bare-below-elbow requirements your profession demands.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Health Metrics Tracking Section -->
     <section class="py-16 px-4">
