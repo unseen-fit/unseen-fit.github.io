@@ -78,17 +78,12 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <!-- <svg width="32" height="30" viewBox="0 0 47 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.8545 1.66602C23.9408 1.69353 25.0071 1.80118 26.0479 1.9834L22.3711 5.65918C22.3464 5.65908 22.3216 5.65918 22.2969 5.65918C12.5769 5.65929 4.69738 13.5388 4.69727 23.2588C4.69733 32.9788 12.5769 40.8583 22.2969 40.8584C31.4573 40.8584 38.9811 33.8598 39.8174 24.918L43.7744 20.9609C43.8543 21.716 43.8965 22.4826 43.8965 23.2588L43.8896 23.8164C43.5939 35.488 34.0397 44.8584 22.2969 44.8584L21.7393 44.8516C10.2531 44.5604 0.995118 35.3026 0.704102 23.8164L0.697266 23.2588C0.69738 11.3297 10.3678 1.65929 22.2969 1.65918L22.8545 1.66602Z"
-                          fill="currentColor"/>
-                    <path d="M28.132 3.68592C30.0378 1.78009 33.1277 1.78009 35.0336 3.68592L43.2024 11.8548C45.1083 13.7606 45.1083 16.8506 43.2024 18.7564V18.7564C42.8848 19.074 42.3698 19.074 42.0522 18.7564L28.132 4.83619C27.8143 4.51855 27.8143 4.00355 28.132 3.68592V3.68592Z"
-                          fill="currentColor"/>
-                </svg> -->
-                    <span class="text-gray-900 font-bold text-4xl ml-20 font-figtree tracking-wide">unseen</span>
+                    <span
+                        class="text-gray-900 font-bold text-2xl md:text-4xl md:ml-20 font-figtree tracking-wide">unseen</span>
                 </div>
 
-                <!-- Navigation Links & CTA Button (Right-Aligned) -->
-                <div class="flex items-center space-x-8 text-sm font-semibold ml-auto mr-20">
+                <!-- Desktop Navigation Links & CTA Button -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold ml-auto mr-20">
                     <a href="#specs" class="text-gray-600 hover:text-gray-900 transition-colors">Device</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">App</a>
                     <a href="#support" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
@@ -96,6 +91,35 @@
                         class="bg-black hover:bg-gray-800 transition-colors px-6 py-2 rounded-xl text-white inline-block">
                         Join Waitlist
                     </a>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <!-- Mobile CTA Button -->
+                    <a href="#"
+                        class="bg-black hover:bg-gray-800 transition-colors px-4 py-2 rounded-xl text-white text-sm font-semibold">
+                        Join Waitlist
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="#specs"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Device</a>
+                    <a href="#faq"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">App</a>
+                    <a href="#support"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Contact</a>
                 </div>
             </div>
         </div>
@@ -105,36 +129,44 @@
     <section id="hero" class="relative min-h-screen">
         <!-- Background Image -->
         <div class="absolute inset-0 overflow-hidden">
-            <div class="w-full h-full bg-cover bg-no-repeat"
-                style="background-image: url('img/scenes/womanCrouched.png'); background-position: center 35%; ">
+            <div id="hero-bg" class="w-full h-full bg-cover bg-no-repeat scale-150 md:scale-100"
+                style="background-image: url('img/scenes/womanCrouched.png'); background-position: center center;">
             </div>
             <!-- Subtle dark overlay -->
             <!-- <div class="absolute inset-0 bg-black/10"></div> -->
         </div>
 
+        <style>
+            @media (min-width: 768px) {
+                #hero-bg {
+                    background-position: center 35% !important;
+                }
+            }
+        </style>
+
         <!-- Hero Content - Positioned Bottom Left -->
         <div class="relative z-10 min-h-screen flex items-end">
-            <div class="w-full px-4 pb-16 ml-20 mb-20">
+            <div class="w-full px-4 pb-8 md:pb-16 ml-4 md:ml-20 mb-8 md:mb-20">
                 <div class="max-w-2xl">
                     <!-- Main Headline -->
-                    <h1 class="text-4xl md:text-9xl font-bold leading-tight mb-4 text-white">
+                    <h1 class="text-5xl md:text-9xl font-bold leading-tight mb-4 text-white">
                         Live
                         <span class="text-white">Better</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="text-lg md:text-xl text-white/90 mb-6 max-w-xl leading-relaxed">
+                    <p class="text-base md:text-xl text-white/90 mb-6 max-w-xl leading-relaxed">
                         Bicep-worn, screenless, fitness tracking.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-3 mb-6">
                         <a href="#"
-                            class="bg-white hover:bg-gray-100 transition-colors px-6 py-3 rounded-xl font-semibold text-black inline-block text-center">
+                            class="bg-white hover:bg-gray-100 transition-colors px-6 py-3 rounded-xl font-semibold text-black inline-block text-center text-sm md:text-base">
                             Join Waitlist
                         </a>
                         <button
-                            class="border border-white/40 hover:border-white/60 transition-colors px-6 py-3 rounded-xl font-medium text-white backdrop-blur-sm bg-white/10">
+                            class="border border-white/40 hover:border-white/60 transition-colors px-6 py-3 rounded-xl font-medium text-white backdrop-blur-sm bg-white/10 text-sm md:text-base">
                             Discover unseen
                         </button>
                     </div>
@@ -145,26 +177,28 @@
     </section>
 
     <!-- Product Overview Section -->
-    <section class="py-16 px-8">
+    <section class="py-8 md:py-16 px-4 md:px-8">
         <div class="max-w-full mx-auto">
-            <div class="grid lg:grid-cols-2 gap-2 items-start">
-                <!-- Left Column - Product Image -->
-                <div class="lg:col-span-1 relative">
+            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 md:gap-2 items-start">
+                <!-- Mobile: Text First, Desktop: Image First -->
+                <div class="order-2 lg:order-1 lg:col-span-1 relative">
                     <div class="relative flex justify-center overflow-hidden">
-                        <img src="img/device/front.png" alt="UNSEEN front view" class="w-full h-auto translate-x-36">
+                        <img src="img/device/front.png" alt="UNSEEN front view"
+                            class="w-3/4 md:w-full h-auto lg:translate-x-36 max-w-sm md:max-w-none">
                     </div>
                 </div>
 
-                <!-- Right Column - Content -->
-                <div class="lg:col-span-1 space-y-12">
+                <!-- Content -->
+                <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 md:space-y-12">
                     <!-- Text Content -->
-                    <div class="space-y-8">
+                    <div class="space-y-6 md:space-y-8">
                         <div>
-                            <h2 class="text-5xl md:text-6xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
+                            <h2
+                                class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight tracking-tight text-gray-900">
                                 Built for life.<br>
                                 <span class="text-gray-600">Designed for health.</span>
                             </h2>
-                            <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+                            <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light">
                                 The unseen wearable device is designed for 24/7 wear on the upper arm. It continuously
                                 measures your health data and transmits them to your mobile - where the data are
                                 analysed
@@ -173,30 +207,28 @@
                         </div>
 
                         <!-- Specifications Grid -->
-                        <div class="grid grid-cols-2 gap-x-12 gap-y-8">
+                        <div class="grid grid-cols-2 gap-x-6 md:gap-x-12 gap-y-6 md:gap-y-8">
                             <div class="space-y-2">
-                                <div class="text-3xl font-semibold text-gray-900">10 Days</div>
-                                <div class="text-lg text-gray-500 font-medium">Battery Life</div>
+                                <div class="text-2xl md:text-3xl font-semibold text-gray-900">10 Days</div>
+                                <div class="text-sm md:text-lg text-gray-500 font-medium">Battery Life</div>
                             </div>
 
                             <div class="space-y-2">
-                                <div class="text-3xl font-semibold text-gray-900">8.6g</div>
-                                <div class="text-lg text-gray-500 font-medium">Ultra-lightweight</div>
+                                <div class="text-2xl md:text-3xl font-semibold text-gray-900">8.6g</div>
+                                <div class="text-sm md:text-lg text-gray-500 font-medium">Ultra-lightweight</div>
                             </div>
 
                             <div class="space-y-2">
-                                <div class="text-3xl font-semibold text-gray-900">IP68</div>
-                                <div class="text-lg text-gray-500 font-medium">Water Resistant</div>
+                                <div class="text-2xl md:text-3xl font-semibold text-gray-900">IP68</div>
+                                <div class="text-sm md:text-lg text-gray-500 font-medium">Water Resistant</div>
                             </div>
 
                             <div class="space-y-2">
-                                <div class="text-3xl font-semibold text-gray-900">24/7</div>
-                                <div class="text-lg text-gray-500 font-medium">Continuous Tracking</div>
+                                <div class="text-2xl md:text-3xl font-semibold text-gray-900">24/7</div>
+                                <div class="text-sm md:text-lg text-gray-500 font-medium">Continuous Tracking</div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -1146,6 +1178,31 @@
             }
 
             lastScrollTop = scrollTop;
+        });
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!nav.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
         });
 
         // Product gallery functionality
