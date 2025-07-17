@@ -235,40 +235,46 @@
     </section>
 
     <!-- Bicep Placement Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20">
-        <!-- Background Image -->
-        <div class="absolute inset-0">
-            <img src="img/scenes/kettlebell.png" alt="Woman training with kettlebell"
-                class="w-full h-full object-cover">
-            <!-- Dark overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/0 to-transparent"></div>
-        </div>
-
-        <!-- Content -->
-        <div class="relative z-10 h-full flex items-end">
-            <div class="px-8 lg:px-16 pb-16 max-w-3xl">
-                <!-- Label -->
-                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <span class="text-white text-sm font-medium">Upper Arm Advantage</span>
-                </div>
-
-                <!-- <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                    Bicep Placement<br>
-                    <span class="text-white/80">No Screens</span>
-                </h2> -->
-
-                <div class="max-w-xl">
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
-                        Upper arm placement delivers superior accuracy with stable contact and perfect training
-                        freedom—kettlebells, grip positions, equipment use without limits. Completely hidden under
-                        clothing. No screens, no distractions.
-                    </p>
+    <section class="relative">
+        <!-- Image Container - Full viewport height on mobile -->
+        <div class="relative h-screen md:h-[800px] lg:h-[1000px] overflow-hidden md:mx-20">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="img/scenes/kettlebell.png" alt="Woman training with kettlebell"
+                    class="w-full h-full object-cover">
+                <!-- Gradient overlay - darker at bottom for text readability -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 md:bg-gradient-to-r md:from-black/40 md:via-black/0 md:to-transparent">
                 </div>
             </div>
+
+            <!-- Content positioned within bottom of image -->
+            <div class="absolute inset-0 flex items-end md:items-end z-10">
+                <div class="px-4 md:px-8 lg:px-16 pb-8 md:pb-16 max-w-sm md:max-w-3xl">
+                    <!-- Label -->
+                    <div
+                        class="inline-flex items-center gap-x-2.5 px-3 md:px-4 py-2 bg-white/20 md:bg-white/10 backdrop-blur-md rounded-lg mb-3 md:mb-6">
+                        <svg class="w-4 md:w-5 h-4 md:h-5 text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span class="text-white text-xs md:text-sm font-medium">Upper Arm Advantage</span>
+                    </div>
+
+                    <div>
+                        <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
+                            <strong>Upper arm placement</strong> delivers superior accuracy and perfect training
+                            freedom. Completely hidden under clothing. No screens, no distractions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional content space below image -->
+        <div class="bg-white py-8">
+            <!-- This provides smooth continuation space if needed -->
         </div>
     </section>
 
