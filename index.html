@@ -279,38 +279,39 @@
     </section>
 
     <!-- Free Your Wrist Grid Section -->
-    <section class="py-16 px-8">
+    <section class="py-8 md:py-16 px-4 md:px-8">
         <div class="max-w-full mx-auto">
             <!-- Title Section -->
-            <div class="text-center mb-16">
-                <h2 class="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
+            <div class="text-center mb-8 md:mb-16">
+                <h2
+                    class="text-3xl md:text-5xl lg:text-8xl font-bold mb-4 md:mb-8 leading-tight tracking-tight text-gray-900">
                     Free your wrist.<br>
                     <span class="text-gray-600">Do anything.</span>
-                    </p>
+                </h2>
             </div>
 
-            <!-- 2 Image Grid Container -->
-            <div class="grid grid-cols-2 gap-2 h-[800px] mx-12">
-                <!-- Left - Chef -->
-                <div class="relative overflow-hidden">
+            <!-- Responsive Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 mx-0 md:mx-12">
+                <!-- Chef Image -->
+                <div class="relative overflow-hidden h-[500px] md:h-[800px]">
                     <img src="img/scenes/chef.png" alt="Professional chef working" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-6 left-6 max-w-sm">
-                        <h3 class="text-white font-medium text-xl mb-3">Wear it anywhere.</h3>
-                        <p class="text-white/90 text-base font-light leading-relaxed">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-auto md:max-w-sm">
+                        <h3 class="text-white font-medium text-lg md:text-xl mb-2 md:mb-3">Wear it anywhere.</h3>
+                        <p class="text-white/90 text-sm md:text-base font-light leading-relaxed">
                             Continue wearing UNSEEN to work without worry. Professional settings with bare-below-elbows
                             requirements become seamless—never miss health data because of workplace protocols.
                         </p>
                     </div>
                 </div>
 
-                <!-- Right - Watch -->
-                <div class="relative overflow-hidden">
+                <!-- Watch Image -->
+                <div class="relative overflow-hidden h-[500px] md:h-[800px]">
                     <img src="img/scenes/watch.jpg" alt="Elegant timepiece" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-6 left-6 max-w-sm">
-                        <h3 class="text-white font-medium text-xl mb-3">Style Freedom</h3>
-                        <p class="text-white/90 text-base font-light leading-relaxed">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-auto md:max-w-sm">
+                        <h3 class="text-white font-medium text-lg md:text-xl mb-2 md:mb-3">Style Freedom</h3>
+                        <p class="text-white/90 text-sm md:text-base font-light leading-relaxed">
                             Your wrist stays free for the timepieces you love. UNSEEN's elegant design remains
                             completely unseen under any clothing—even fitted short sleeves—preserving your style while
                             delivering comprehensive health insights.
@@ -322,22 +323,45 @@
     </section>
 
     <!-- Strap woven into your life section -->
-    <section class="py-16 px-8">
+    <section class="py-8 md:py-16 px-0 md:px-8">
         <div class="max-w-full mx-auto">
-            <div class="relative flex justify-center items-center min-h-[600px]">
-                <!-- Background Image -->
-                <div class="relative">
+            <!-- Mobile: Separate Image and Text -->
+            <div class="md:hidden">
+                <!-- Mobile Image -->
+                <div class="relative h-[400px] overflow-hidden">
                     <img src="img/device/side.335.png" alt="UNSEEN side view showing charging port"
-                        class="w-full h-auto max-w-full">
+                        class="w-full h-full object-cover object-center">
+                </div>
+                <!-- Mobile Text Content Below -->
+                <div class="px-4 py-6 text-center bg-white">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3">
+                        Woven into your life.
+                    </h2>
+                    <p class="text-sm text-gray-600 font-light max-w-sm mx-auto">
+                        <strong>Soft nylon loop strap</strong> with secure buckle-velcro closure for comfortable 24/7
+                        wear.
+                    </p>
+                </div>
+            </div>
 
-                    <!-- Overlay Text -->
-                    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-                        <h2 class="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Woven into your life.
-                        </h2>
-                        <p class="text-xl md:text-xl text-gray-600 font-light max-w-lg">
-                            Soft durable nylon loop strap with buckle-velcro closure for a secure comfortable 24/7 fit.
-                        </p>
+            <!-- Desktop: Original Overlay Layout -->
+            <div class="hidden md:block">
+                <div class="relative flex justify-center items-center min-h-[600px]">
+                    <!-- Background Image -->
+                    <div class="relative">
+                        <img src="img/device/side.335.png" alt="UNSEEN side view showing charging port"
+                            class="w-full h-auto max-w-full">
+
+                        <!-- Overlay Text -->
+                        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                                Woven into your life.
+                            </h2>
+                            <p class="text-xl text-gray-600 font-light max-w-lg">
+                                Soft durable nylon loop strap with buckle-velcro closure for a secure comfortable 24/7
+                                fit.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
