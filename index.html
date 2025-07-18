@@ -369,47 +369,60 @@
     </section>
 
     <!-- Waterproof Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img src="img/scenes/swiming.png" alt="Swimmer in pool showing waterproof capability"
-                class="w-full h-full object-cover">
+                class="w-full h-full object-cover object-right md:object-center">
             <!-- Subtle overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent md:from-black/40 md:via-black/15">
+            </div>
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 h-full flex items-center justify-center">
-            <div class="text-center px-4 max-w-4xl mx-auto">
+        <div class="relative z-10 h-full flex items-end md:items-center justify-center">
+            <div class="text-center px-4 md:px-4 pb-8 md:pb-0 max-w-xl md:max-w-4xl mx-auto">
                 <!-- Label -->
-                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                    class="inline-flex items-center gap-x-2.5 px-3 md:px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4 md:mb-6">
+                    <svg class="w-4 md:w-5 h-4 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
-                    <span class="text-white text-sm font-medium">IP68 Waterproof</span>
+                    <span class="text-white text-xs md:text-sm font-medium">IP68 Waterproof</span>
                 </div>
 
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                     Never Miss a Beat.<br>
                     <span class="text-white/80">Even Underwater.</span>
                 </h2>
 
-                <div class="mb-8">
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-8">
-                        <strong>IP68 waterproof up to 50m</strong>—unseen works seamlessly in water and on land. Never
-                        worry about removing your device for showers, swimming, or any aquatic activity while capturing
-                        all your water-based health data.
+                <div class="mb-6 md:mb-8">
+                    <p
+                        class="text-sm md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-sm md:max-w-2xl mx-auto">
+                        <strong>IP68 waterproof up to 50m</strong>—works seamlessly in water and on land. Never worry
+                        about removing your device for any aquatic activity.
                     </p>
                 </div>
 
-                <!-- Single Glassmorphic Card -->
-                <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 max-w-2xl mx-auto">
-                    <h3 class="text-xl font-bold text-white mb-3">Complete Water Freedom</h3>
-                    <p class="text-white/90 text-base leading-relaxed">
-                        From daily showers to competitive swimming—track
-                        with the same precision you rely on during land activities. True 24/7 monitoring without limits.
+                <!-- Mobile: Simple text, Desktop: Glassmorphic Card -->
+                <div class="md:hidden">
+                    <p class="text-xs text-white/80 max-w-xs mx-auto">
+                        True 24/7 monitoring without limits.
                     </p>
+                </div>
+
+                <div class="hidden md:block">
+                    <!-- Single Glassmorphic Card -->
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 max-w-2xl mx-auto">
+                        <h3 class="text-xl font-bold text-white mb-3">Complete Water Freedom</h3>
+                        <p class="text-white/90 text-base leading-relaxed">
+                            From daily showers to competitive swimming—track
+                            with the same precision you rely on during land activities. True 24/7 monitoring without
+                            limits.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,119 +438,130 @@
 
 
     <!-- Automatic tracking Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img src="img/scenes/ball.png" alt="Basketball player in action"
                 class="w-full h-full object-cover object-center" style="transform: scale(1.2);">
-            <!-- Dark overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-l from-black/80 via-black/20 to-transparent"></div>
+            <!-- Subtle overlay for text readability -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent md:bg-gradient-to-l md:from-black/60 md:via-black/15 md:to-transparent">
+            </div>
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 h-full flex items-center justify-end">
-            <div class="pr-8 lg:pr-16 max-w-sm">
+        <div class="relative z-10 h-full flex items-end md:items-center justify-center md:justify-end">
+            <div class="px-4 md:pr-8 lg:pr-16 pb-8 md:pb-0 max-w-lg md:max-w-sm">
                 <!-- Label -->
-                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                    class="inline-flex items-center gap-x-2.5 px-3 md:px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4 md:mb-6">
+                    <svg class="w-4 md:w-5 h-4 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
-                    <span class="text-white text-sm font-medium">Automatic Detection</span>
+                    <span class="text-white text-xs md:text-sm font-medium">Automatic Detection</span>
                 </div>
 
-                <!-- <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                    0<br>
-                    Intelligence.<br>
-                    <span class="text-white/80">Worry-Free Health.</span>
-                </h2> -->
-
-                <div class="space-y-4">
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                <div class="space-y-3 md:space-y-4">
+                    <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
                         <strong>Heart rate monitor and dual motion sensors</strong> work continuously in the background,
-                        automatically detecting exercise and sleep without any manual triggers. No arbitrary activity
-                        types, no forgotten workouts.
+                        automatically detecting exercise and sleep without manual triggers.
                     </p>
 
-                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                    <p class="text-xs md:text-base lg:text-lg text-white/80 leading-relaxed">
                         True <strong>24/7 model</strong>—whether you're playing basketball, climbing stairs, or
-                        sleeping, unseen captures it all with our state of the art algorithms.
+                        sleeping, unseen captures it all.
                     </p>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Activity Index Section -->
-    <section class="relative h-[1300px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[1000px] lg:h-[1300px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/boxing.png" alt="Professional chef at work" class="w-full h-full object-cover">
-            <!-- Dark overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+            <img src="img/scenes/boxing.png" alt="Professional boxer training" class="w-full h-full object-cover">
+            <!-- Subtle overlay for text readability -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent md:bg-gradient-to-r md:from-black/70 md:via-black/50 md:to-black/30">
+            </div>
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 h-full flex items-center">
-            <div class="px-8 lg:px-16 max-w-4xl">
+        <div class="relative z-10 h-full flex items-end md:items-center">
+            <div class="px-4 md:px-8 lg:px-16 pb-8 md:pb-0 max-w-lg md:max-w-4xl">
                 <!-- Label -->
-                <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                    class="inline-flex items-center gap-x-2.5 px-3 md:px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4 md:mb-6">
+                    <svg class="w-4 md:w-5 h-4 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span class="text-white text-sm font-medium">Activity Index</span>
+                    <span class="text-white text-xs md:text-sm font-medium">Activity Index</span>
                 </div>
 
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                     Activity Index:<br>
                     <span class="text-white/80">Science-Backed Health Outcomes</span>
                 </h2>
 
-                <div class="space-y-4 mb-8 max-w-2xl">
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                <div class="space-y-3 md:space-y-4 mb-6 md:mb-8 max-w-sm md:max-w-2xl">
+                    <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
                         Our core exercise metric, <strong>Activity Index</strong>, is based on research with over 1
-                        million participants across decades of data. High weekly Activity Index has been robustly
-                        associated with decreased risk across major health conditions.
+                        million participants. High weekly Activity Index reduces risk across major health conditions.
                     </p>
 
-                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
-                        Large prospective population studies consistently show Activity Index predicts reduced
-                        <strong>cardiovascular disease, dementia, cancer, and all-cause mortality</strong>—making it the
-                        most scientifically validated activity metric available.
-                    </p>
+                    <!-- Mobile: Simple list, Desktop: Keep full description -->
+                    <div class="md:hidden">
+                        <p class="text-xs text-white/80 leading-relaxed">
+                            Scientifically proven to reduce <strong>cardiovascular disease, dementia, cancer, and
+                                mortality</strong> risk.
+                        </p>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                            Large prospective population studies consistently show Activity Index predicts reduced
+                            <strong>cardiovascular disease, dementia, cancer, and all-cause mortality</strong>—making it
+                            the
+                            most scientifically validated activity metric available.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Research Foundation -->
-                <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 max-w-2xl">
-                    <h3 class="text-xl font-bold text-white mb-4">Proven Health Outcomes</h3>
-                    <div class="grid md:grid-cols-2 gap-4 text-white/90 text-sm">
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-red-400 rounded-full"></div>
-                                <span><strong>Cardiovascular Disease</strong> risk reduction</span>
+                <!-- Desktop: Keep glassmorphic card -->
+                <div class="hidden md:block">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 max-w-2xl">
+                        <h3 class="text-xl font-bold text-white mb-4">Proven Health Outcomes</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-white/90 text-sm">
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                                    <span><strong>Cardiovascular Disease</strong> risk reduction</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                                    <span><strong>Dementia</strong> prevention</span>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
-                                <span><strong>Dementia</strong> prevention</span>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+                                    <span><strong>Cancer</strong> risk reduction</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                                    <span><strong>All-Cause Mortality</strong> reduction</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                                <span><strong>Cancer</strong> risk reduction</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <div class="w-2 h-2 bg-green-400 rounded-full"></div>
-                                <span><strong>All-Cause Mortality</strong> reduction</span>
-                            </div>
+                        <div class="mt-4 pt-4 border-t border-white/20">
+                            <p class="text-white/80 text-xs italic">
+                                Based on decades of research with 1M+ participants in large prospective population
+                                studies
+                            </p>
                         </div>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-white/20">
-                        <p class="text-white/80 text-xs italic">
-                            Based on decades of research with 1M+ participants in large prospective population studies
-                        </p>
                     </div>
                 </div>
             </div>
