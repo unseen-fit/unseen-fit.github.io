@@ -194,7 +194,7 @@
                     <div class="space-y-6 md:space-y-8">
                         <div>
                             <h2
-                                class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-8 leading-tight tracking-tight text-gray-900">
+                                class="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight text-gray-900">
                                 Built for life.<br>
                                 <span class="text-gray-600">Designed for health.</span>
                             </h2>
@@ -263,7 +263,7 @@
                     </div>
 
                     <div>
-                        <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
+                        <p class="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed">
                             <strong>Upper arm placement</strong> delivers superior accuracy and perfect training
                             freedom. Completely hidden under clothing. No screens, no distractions.
                         </p>
@@ -284,7 +284,7 @@
             <!-- Title Section -->
             <div class="text-center mb-8 md:mb-16">
                 <h2
-                    class="text-3xl md:text-5xl lg:text-8xl font-bold mb-4 md:mb-8 leading-tight tracking-tight text-gray-900">
+                    class="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight text-gray-900">
                     Free your wrist.<br>
                     <span class="text-gray-600">Do anything.</span>
                 </h2>
@@ -393,14 +393,14 @@
                     <span class="text-white text-xs md:text-sm font-medium">IP68 Waterproof</span>
                 </div>
 
-                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                     Never Miss a Beat.<br>
                     <span class="text-white/80">Even Underwater.</span>
                 </h2>
 
                 <div class="mb-6 md:mb-8">
                     <p
-                        class="text-sm md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-sm md:max-w-2xl mx-auto">
+                        class="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-sm md:max-w-2xl mx-auto">
                         <strong>IP68 waterproof up to 50m</strong>—works seamlessly in water and on land. Never worry
                         about removing your device for any aquatic activity.
                     </p>
@@ -430,10 +430,10 @@
 
     <!-- Set and Forget Title -->
     <div class="text-center mb-16">
-        <h2 class="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
+        <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight text-gray-900">
             Fully Automated<br>
             <span class="text-gray-600">unseen intelligence</span>
-            </p>
+        </h2>
     </div>
 
 
@@ -463,12 +463,12 @@
                 </div>
 
                 <div class="space-y-3 md:space-y-4">
-                    <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
+                    <p class="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed">
                         <strong>Heart rate monitor and dual motion sensors</strong> work continuously in the background,
                         automatically detecting exercise and sleep without manual triggers.
                     </p>
 
-                    <p class="text-xs md:text-base lg:text-lg text-white/80 leading-relaxed">
+                    <p class="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed">
                         True <strong>24/7 model</strong>—whether you're playing basketball, climbing stairs, or
                         sleeping, unseen captures it all.
                     </p>
@@ -507,21 +507,21 @@
                 </h2>
 
                 <div class="space-y-3 md:space-y-4 mb-6 md:mb-8 max-w-sm md:max-w-2xl">
-                    <p class="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed">
+                    <p class="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed">
                         Our core exercise metric, <strong>Activity Index</strong>, is based on research with over 1
                         million participants. High weekly Activity Index reduces risk across major health conditions.
                     </p>
 
                     <!-- Mobile: Simple list, Desktop: Keep full description -->
                     <div class="md:hidden">
-                        <p class="text-xs text-white/80 leading-relaxed">
+                        <p class="text-sm text-white/80 leading-relaxed">
                             Scientifically proven to reduce <strong>cardiovascular disease, dementia, cancer, and
                                 mortality</strong> risk.
                         </p>
                     </div>
 
                     <div class="hidden md:block">
-                        <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                        <p class="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed">
                             Large prospective population studies consistently show Activity Index predicts reduced
                             <strong>cardiovascular disease, dementia, cancer, and all-cause mortality</strong>—making it
                             the
@@ -569,17 +569,67 @@
     </section>
 
     <!-- Sleep Tracking Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img src="img/scenes/sleep.png" alt="Peaceful sleep tracking with UNSEEN device"
-                class="w-full h-full object-cover">
-            <!-- Dark overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-l from-black/80 via-black/20 to-transparent"></div>
+                class="w-full h-full object-cover md:object-center" style="object-position: 35% center;">
+            <style>
+                @media (min-width: 768px) {
+                    img[src="img/scenes/sleep.png"] {
+                        object-position: center center !important;
+                    }
+                }
+            </style>
+            <!-- Subtle overlay for text readability -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent md:bg-gradient-to-l md:from-black/70 md:via-black/15 md:to-transparent">
+            </div>
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 h-full flex items-center justify-end">
+        <!-- Mobile Layout: Split header and content -->
+        <div class="relative z-10 h-full flex flex-col md:hidden">
+            <!-- Mobile: Title content positioned higher and left-aligned -->
+            <div class="pt-16 pb-8">
+                <div class="px-4 max-w-lg">
+                    <!-- Label -->
+                    <div
+                        class="inline-flex items-center gap-x-2.5 px-3 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                        <span class="text-white text-xs md:text-sm font-medium">Sleep Intelligence</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                        Master Your Sleep.<br>
+                        <span class="text-white/80">Transform Your Days.</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Mobile: Spacer to push paragraph to bottom -->
+            <div class="flex-1"></div>
+
+            <!-- Mobile: Paragraph content at bottom -->
+            <div class="px-4 pb-8 max-w-lg mx-auto">
+                <div class="space-y-3">
+                    <p class="text-base md:text-lg text-white/95 leading-relaxed">
+                        <strong>Automatic sleep and nap tracking</strong> captures duration, stages, and delivers your
+                        overall sleep score. Trend analysis provides insights to keep you on track.
+                    </p>
+
+                    <p class="text-sm md:text-base text-white/80 leading-relaxed">
+                        No manual triggers required—complete sleep intelligence without effort.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Layout: Original design -->
+        <div class="relative z-10 h-full hidden md:flex md:items-center md:justify-end">
             <div class="pr-8 lg:pr-16 max-w-lg">
                 <!-- Label -->
                 <div class="inline-flex items-center gap-x-2.5 px-4 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-6">
@@ -590,140 +640,45 @@
                     <span class="text-white text-sm font-medium">Sleep Intelligence</span>
                 </div>
 
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                     Master Your Sleep.<br>
                     <span class="text-white/80">Transform Your Days.</span>
                 </h2>
 
                 <div class="space-y-4">
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed">
+                    <p class="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed">
                         <strong>Automatic sleep and nap tracking</strong> captures duration, stages, and delivers your
-                        overall sleep score. Trend analysis reveals consistency patterns over time, providing insights
-                        to keep you on track for better rest.
+                        overall sleep score. Trend analysis provides insights to keep you on track.
                     </p>
 
-                    <p class="text-base md:text-lg text-white/80 leading-relaxed">
+                    <p class="text-sm md:text-base lg:text-lg text-white/80 leading-relaxed">
                         No manual start/stop required—unseen detects sleep automatically, whether nighttime rest or
                         daytime naps, giving you complete sleep intelligence without effort.
                     </p>
                 </div>
 
-                <!-- Sleep Score Card -->
-                <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 mt-6">
-                    <h3 class="text-lg font-bold text-white mb-4">This Week's Sleep Insights</h3>
-                    <div class="space-y-3 text-sm">
-                        <div class="flex justify-between items-center text-white/90">
-                            <span>Sleep Score</span>
-                            <span class="text-green-400 font-bold text-xl">82</span>
-                        </div>
-                        <div class="flex justify-between items-center text-white/90">
-                            <span>Consistency Trend</span>
-                            <span class="text-yellow-400 font-medium">↗ Improving</span>
-                        </div>
-                        <div class="flex justify-between items-center text-white/90">
-                            <span>Average Duration</span>
-                            <span class="text-white/90 font-medium">7h 15m</span>
-                        </div>
-                        <div class="h-px bg-white/20 my-3"></div>
-                        <div class="text-white/80 text-xs">
-                            <strong>Insight:</strong> Your sleep consistency improved 12% this week. Keep your current
-                            bedtime routine to maintain this positive trend.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Sensors Section -->
-    <section class="h-[1000px] py-16 px-8">
-        <div class="max-w-full mx-auto h-full">
-            <div class="grid lg:grid-cols-2 gap-12 items-center h-full">
-                <!-- Left Column - Sensors Image -->
-                <div class="lg:col-span-1 relative h-full flex justify-center items-center">
-                    <div class="relative overflow-hidden">
-                        <img src="img/device/sensors.334.png" alt="UNSEEN medical-grade sensors"
-                            class="w-full h-auto max-w-lg">
-                    </div>
-                </div>
-
-                <!-- Right Column - Sensors Content -->
-                <div class="lg:col-span-1 space-y-12">
-                    <!-- Main Heading -->
-                    <div>
-                        <div class="text-unseen-green text-sm font-semibold tracking-wider uppercase mb-4">
-                            MEDICAL-GRADE SENSORS
-                        </div>
-                        <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
-                            Precision You<br>
-                            <span class="text-gray-600">Can Trust.</span>
-                        </h2>
-                        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light mb-12">
-                            Clinical-grade sensor technology delivers hospital-quality measurements in a wearable that
-                            never gets in your way.
-                        </p>
-                    </div>
-
-                    <!-- Sensor Features -->
-                    <div class="space-y-8">
-                        <!-- PPG Heart Rate -->
-                        <div class="border-l-4 border-unseen-green pl-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">FDA-Approved PPG Heart Rate</h3>
-                            <p class="text-lg text-gray-600 leading-relaxed">
-                                Our photoplethysmography sensor has FDA clearance for medical-grade heart rate
-                                monitoring.
-                                Multi-wavelength LED technology provides accuracy within ±1 BPM across all skin tones
-                                and activity levels.
-                            </p>
-                        </div>
-
-                        <!-- SpO2 Monitoring -->
-                        <div class="border-l-4 border-blue-500 pl-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Clinical SpO2 Monitoring</h3>
-                            <p class="text-lg text-gray-600 leading-relaxed">
-                                Continuous blood oxygen saturation tracking using dual-wavelength infrared technology.
-                                Hospital-grade precision for sleep apnea detection and altitude training optimization.
-                            </p>
-                        </div>
-
-                        <!-- Motion Sensors -->
-                        <div class="border-l-4 border-purple-500 pl-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Dual Motion Sensors</h3>
-                            <p class="text-lg text-gray-600 leading-relaxed">
-                                6-axis accelerometer and gyroscope combination eliminates motion artifacts from heart
-                                rate readings.
-                                Advanced algorithms distinguish between arm movement and cardiovascular signals with
-                                99.7% accuracy.
-                            </p>
-                        </div>
-
-                        <!-- Medical Grade Precision -->
-                        <div
-                            class="bg-gradient-to-br from-unseen-green/5 to-unseen-green-light/5 border border-unseen-green/10 rounded-xl p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-4">Medical-Grade Data Quality</h3>
-                            <div class="grid md:grid-cols-2 gap-4 text-sm">
-                                <div class="space-y-2">
-                                    <div class="flex justify-between">
-                                        <span class="text-gray-600">Heart Rate Accuracy:</span>
-                                        <span class="font-semibold text-gray-900">±1 BPM</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-gray-600">SpO2 Accuracy:</span>
-                                        <span class="font-semibold text-gray-900">±2%</span>
-                                    </div>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex justify-between">
-                                        <span class="text-gray-600">HRV Precision:</span>
-                                        <span class="font-semibold text-gray-900">1ms resolution</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-gray-600">Sampling Rate:</span>
-                                        <span class="font-semibold text-gray-900">128Hz</span>
-                                    </div>
-                                </div>
+                <!-- Desktop: Keep sleep score card -->
+                <div class="hidden md:block">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 mt-6">
+                        <h3 class="text-lg font-bold text-white mb-4">This Week's Sleep Insights</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between items-center text-white/90">
+                                <span>Sleep Score</span>
+                                <span class="text-green-400 font-bold text-xl">82</span>
+                            </div>
+                            <div class="flex justify-between items-center text-white/90">
+                                <span>Consistency Trend</span>
+                                <span class="text-yellow-400 font-medium">↗ Improving</span>
+                            </div>
+                            <div class="flex justify-between items-center text-white/90">
+                                <span>Average Duration</span>
+                                <span class="text-white/90 font-medium">7h 15m</span>
+                            </div>
+                            <div class="h-px bg-white/20 my-3"></div>
+                            <div class="text-white/80 text-xs">
+                                <strong>Insight:</strong> Your sleep consistency improved 12% this week. Keep your
+                                current
+                                bedtime routine to maintain this positive trend.
                             </div>
                         </div>
                     </div>
@@ -732,10 +687,16 @@
         </div>
     </section>
 
-
+    <!-- Health Companion Title -->
+    <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight tracking-tight text-gray-900">
+            Your Personal<br>
+            <span class="text-gray-600">Health Companion</span>
+        </h2>
+    </div>
 
     <!-- Vital Signs Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[1000px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img src="img/scenes/ManOnYogaMat.png" alt="Man practicing yoga with health monitoring"
@@ -747,8 +708,69 @@
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="relative z-10 h-full flex flex-col">
+        <!-- Mobile Layout: Split header and content -->
+        <div class="relative z-10 h-full flex flex-col md:hidden">
+            <!-- Mobile: Title content positioned higher and left-aligned -->
+            <div class="pt-16 pb-8">
+                <div class="px-4 max-w-lg">
+                    <!-- Label -->
+                    <div
+                        class="inline-flex items-center gap-x-2.5 px-3 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span class="text-white text-xs md:text-sm font-medium">Vital Signs Monitoring</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                        Complete Health<br>
+                        <span class="text-white/80">Visibility</span>
+                    </h2>
+
+                    <p class="text-base md:text-lg leading-relaxed text-white/90">
+                        <strong>FDA-approved sensors</strong> continuously monitor vital signs. Real-time insights keep
+                        you informed and in control.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mobile: Spacer to push grid to bottom -->
+            <div class="flex-1"></div>
+
+            <!-- Mobile: Grid at bottom -->
+            <div class="pb-8 px-4">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">Heart Rate</div>
+                        <div class="text-white/70 text-xs">Continuous BPM</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">HRV</div>
+                        <div class="text-white/70 text-xs">Recovery Insights</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">SpO2</div>
+                        <div class="text-white/70 text-xs">Blood Oxygen</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">Blood Pressure</div>
+                        <div class="text-white/70 text-xs">Trend Analysis</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">VO2 Max</div>
+                        <div class="text-white/70 text-xs">Fitness Level</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md rounded-lg p-3 border border-white/20">
+                        <div class="text-sm font-bold text-white mb-1">Stress</div>
+                        <div class="text-white/70 text-xs">Real-time Score</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Layout: Original design -->
+        <div class="relative z-10 h-full hidden md:flex md:flex-col">
             <!-- Header Content -->
             <div class="flex-1 flex items-center justify-end">
                 <div class="pr-8 lg:pr-16 max-w-2xl">
@@ -762,7 +784,7 @@
                         <span class="text-white text-sm font-medium">Vital Signs Monitoring</span>
                     </div>
 
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                         Complete Health<br>
                         <span class="text-white/80">Visibility</span>
                     </h2>
@@ -807,26 +829,93 @@
         </div>
     </section>
 
-    <!-- Set and Forget Title -->
-    <div class="text-center mb-16">
-        <h2 class="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight text-gray-900">
-            Your Personal<br>
-            <span class="text-gray-600">Health Companion</span>
-            </p>
-    </div>
-
     <!-- Biological Age Section -->
-    <section class="relative h-[1000px] overflow-hidden mx-20 my-20">
+    <section class="relative h-[100vh] md:h-[1000px] overflow-hidden mx-0 md:mx-20 my-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <img src="img/scenes/mountain.png" alt="Person standing on mountain peak"
                 class="w-full h-full object-cover">
-            <!-- Gradient overlays for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70"></div>
+            <!-- Mobile: Simple top-to-bottom gradient for better readability -->
+            <div class="absolute inset-0 md:hidden bg-gradient-to-b from-black/40 via-black/20 to-black/70"></div>
+            <!-- Desktop: Original horizontal gradient -->
+            <div class="absolute inset-0 hidden md:block bg-gradient-to-r from-black/70 via-transparent to-black/70">
+            </div>
         </div>
 
-        <!-- Content -->
-        <div class="relative z-10 h-full flex items-center">
+        <!-- Mobile Layout: Split header and content -->
+        <div class="relative z-10 h-full flex flex-col md:hidden">
+            <!-- Mobile: Title content positioned higher and left-aligned -->
+            <div class="pt-16 pb-8">
+                <div class="px-4 max-w-lg">
+                    <!-- Label -->
+                    <div
+                        class="inline-flex items-center gap-x-2.5 px-3 py-2 bg-white/10 backdrop-blur-md rounded-lg mb-4">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-white text-xs md:text-sm font-medium">Biological Age</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                        Know Your True Age.<br>
+                        <span class="text-white/80">Extend Your Healthspan.</span>
+                    </h2>
+
+                    <p class="text-base md:text-lg leading-relaxed text-white/90">
+                        The app analyzes your data to estimate your <strong>biological age</strong> and <strong>aging
+                            pace</strong>—then shows exactly what to focus on to improve your healthspan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mobile: Spacer to push cards to bottom -->
+            <div class="flex-1"></div>
+
+            <!-- Mobile: Cards at bottom -->
+            <div class="pb-8 px-4 space-y-4">
+                <!-- Age Comparison -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                    <h3 class="text-sm font-bold text-white mb-3">Your Aging Profile</h3>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div>
+                            <div class="text-lg font-bold text-green-400">32</div>
+                            <div class="text-white/80 text-xs">Bio Age</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-bold text-blue-400">0.85x</div>
+                            <div class="text-white/80 text-xs">Aging Pace</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-bold text-green-400">-3</div>
+                            <div class="text-white/80 text-xs">Years Younger</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Focus Areas -->
+                <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                    <h4 class="text-sm font-bold text-white mb-3">Top Focus Areas</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="text-white/90 font-medium">Sleep optimization</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full flex-shrink-0"></div>
+                            <span class="text-white/90 font-medium">HRV recovery</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></div>
+                            <span class="text-white/90 font-medium">Activity consistency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Layout: Original design -->
+        <div class="relative z-10 h-full hidden md:flex md:items-center">
             <div class="w-full px-8 lg:px-16">
                 <div class="grid grid-cols-3 gap-8 items-center">
                     <!-- Left Column - Main Message -->
@@ -841,7 +930,7 @@
                             <span class="text-white text-sm font-medium">Biological Age</span>
                         </div>
 
-                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                             Know Your True Age.<br>
                             <span class="text-white/80">Extend Your Healthspan.</span>
                         </h2>
@@ -903,6 +992,104 @@
                                     <div class="text-white/90">
                                         <span class="font-medium">Activity consistency</span><br>
                                         <span class="text-white/70 text-xs">Adaptive to your lifestyle changes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sensors Section -->
+    <section class="py-16 md:py-24 px-4 md:px-8">
+        <div class="max-w-full mx-auto">
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Column - Sensors Image -->
+                <div class="lg:col-span-1 relative flex justify-center items-center py-8 md:py-0">
+                    <div class="relative overflow-hidden">
+                        <img src="img/device/sensors.334.png" alt="UNSEEN medical-grade sensors"
+                            class="w-full h-auto max-w-sm md:max-w-lg">
+                    </div>
+                </div>
+
+                <!-- Right Column - Sensors Content -->
+                <div class="lg:col-span-1 space-y-8 md:space-y-12">
+                    <!-- Main Heading -->
+                    <div>
+                        <div class="text-unseen-green text-sm font-semibold tracking-wider uppercase mb-4">
+                            MEDICAL-GRADE SENSORS
+                        </div>
+                        <h2
+                            class="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight tracking-tight text-gray-900">
+                            Precision You<br>
+                            <span class="text-gray-600">Can Trust.</span>
+                        </h2>
+                        <p
+                            class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light mb-8 md:mb-12">
+                            Clinical-grade sensor technology delivers hospital-quality measurements in a wearable that
+                            never gets in your way.
+                        </p>
+                    </div>
+
+                    <!-- Sensor Features -->
+                    <div class="space-y-6 md:space-y-8">
+                        <!-- PPG Heart Rate -->
+                        <div class="border-l-4 border-unseen-green pl-4 md:pl-6">
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">FDA-Approved PPG Heart Rate
+                            </h3>
+                            <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                                Our photoplethysmography sensor has FDA clearance for medical-grade heart rate
+                                monitoring.
+                                Multi-wavelength LED technology provides accuracy within ±1 BPM across all skin tones
+                                and activity levels.
+                            </p>
+                        </div>
+
+                        <!-- SpO2 Monitoring -->
+                        <div class="border-l-4 border-blue-500 pl-4 md:pl-6">
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Clinical SpO2 Monitoring</h3>
+                            <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                                Continuous blood oxygen saturation tracking using dual-wavelength infrared technology.
+                                Hospital-grade precision for sleep apnea detection and altitude training optimization.
+                            </p>
+                        </div>
+
+                        <!-- Motion Sensors -->
+                        <div class="border-l-4 border-purple-500 pl-4 md:pl-6">
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Dual Motion Sensors</h3>
+                            <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                                6-axis accelerometer and gyroscope combination eliminates motion artifacts from heart
+                                rate readings.
+                                Advanced algorithms distinguish between arm movement and cardiovascular signals with
+                                99.7% accuracy.
+                            </p>
+                        </div>
+
+                        <!-- Medical Grade Precision -->
+                        <div
+                            class="bg-gradient-to-br from-unseen-green/5 to-unseen-green-light/5 border border-unseen-green/10 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-4">Medical-Grade Data Quality</h3>
+                            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                <div class="space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Heart Rate Accuracy:</span>
+                                        <span class="font-semibold text-gray-900">±1 BPM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">SpO2 Accuracy:</span>
+                                        <span class="font-semibold text-gray-900">±2%</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">HRV Precision:</span>
+                                        <span class="font-semibold text-gray-900">1ms resolution</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Sampling Rate:</span>
+                                        <span class="font-semibold text-gray-900">128Hz</span>
                                     </div>
                                 </div>
                             </div>
