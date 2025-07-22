@@ -1,2 +1,5 @@
 .DS_Store
 /references/
+
+# Image optimization - exclude original high-res images
+img/*/originals/

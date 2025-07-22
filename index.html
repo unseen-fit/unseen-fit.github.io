@@ -22,7 +22,7 @@
     <meta property="og:title" content="UNSEEN - Health Tracking That Stays Out of Your Way">
     <meta property="og:description"
         content="The first bicep-worn health tracker designed for professionals. Screenless design, 10-day battery, no subscriptions.">
-    <meta property="og:image" content="https://unseen.fit/img/front.png">
+    <meta property="og:image" content="https://unseen.fit/img/device/front-1200.webp">
     <meta property="og:site_name" content="UNSEEN">
 
     <!-- Twitter -->
@@ -31,7 +31,7 @@
     <meta property="twitter:title" content="UNSEEN - Health Tracking That Stays Out of Your Way">
     <meta property="twitter:description"
         content="The first bicep-worn health tracker designed for professionals. Screenless design, 10-day battery, no subscriptions.">
-    <meta property="twitter:image" content="https://unseen.fit/img/front.png">
+    <meta property="twitter:image" content="https://unseen.fit/img/device/front-1200.webp">
 
     <!-- Additional SEO -->
     <link rel="canonical" href="https://unseen.fit/">
@@ -130,7 +130,7 @@
         <!-- Background Image -->
         <div class="absolute inset-0 overflow-hidden">
             <div id="hero-bg" class="w-full h-full bg-cover bg-no-repeat scale-150 md:scale-100"
-                style="background-image: url('img/scenes/womanCrouched.png'); background-position: center center;">
+                style="background-image: url('img/scenes/womanCrouched-1200.webp'); background-position: center center;">
             </div>
             <!-- Subtle dark overlay -->
             <!-- <div class="absolute inset-0 bg-black/10"></div> -->
@@ -183,8 +183,15 @@
                 <!-- Mobile: Text First, Desktop: Image First -->
                 <div class="order-2 lg:order-1 lg:col-span-1 relative">
                     <div class="relative flex justify-center overflow-hidden">
-                        <img src="img/device/front.png" alt="UNSEEN front view"
-                            class="w-3/4 md:w-full h-auto lg:translate-x-36 max-w-sm md:max-w-none">
+                        <picture>
+                            <source srcset="img/device/front-400.webp 400w,
+                                        img/device/front-800.webp 800w,
+                                        img/device/front-1200.webp 1200w" sizes="(max-width: 768px) 75vw,
+                                       (max-width: 1024px) 50vw,
+                                       1200px" type="image/webp">
+                            <img src="img/device/front-800.webp" alt="UNSEEN front view"
+                                class="w-3/4 md:w-full h-auto lg:translate-x-36 max-w-sm md:max-w-none">
+                        </picture>
                     </div>
                 </div>
 
@@ -240,8 +247,13 @@
         <div class="relative h-screen md:h-[800px] lg:h-[1000px] overflow-hidden md:mx-20">
             <!-- Background Image -->
             <div class="absolute inset-0">
-                <img src="img/scenes/kettlebell.png" alt="Woman training with kettlebell"
-                    class="w-full h-full object-cover">
+                <picture>
+                    <source srcset="img/scenes/kettlebell-600.webp 600w,
+                                img/scenes/kettlebell-1200.webp 1200w,
+                                img/scenes/kettlebell-1800.webp 1800w" sizes="100vw" type="image/webp">
+                    <img src="img/scenes/kettlebell-1200.webp" alt="Woman training with kettlebell"
+                        class="w-full h-full object-cover">
+                </picture>
                 <!-- Gradient overlay - darker at bottom for text readability -->
                 <div
                     class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60 md:bg-gradient-to-r md:from-black/40 md:via-black/0 md:to-transparent">
@@ -296,7 +308,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 mx-0 md:mx-12">
                 <!-- Chef Image -->
                 <div class="relative overflow-hidden h-[500px] md:h-[800px]">
-                    <img src="img/scenes/chef.png" alt="Professional chef working" class="w-full h-full object-cover">
+                    <picture>
+                        <source srcset="img/scenes/chef-600.webp 600w,
+                                    img/scenes/chef-1200.webp 1200w,
+                                    img/scenes/chef-1800.webp 1800w" sizes="(max-width: 768px) 100vw,
+                                   (max-width: 1024px) 50vw,
+                                   50vw" type="image/webp">
+                        <img src="img/scenes/chef-1200.webp" alt="Professional chef working"
+                            class="w-full h-full object-cover">
+                    </picture>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-auto md:max-w-sm">
                         <h3 class="text-white font-medium text-lg md:text-xl mb-2 md:mb-3">Wear it anywhere.</h3>
@@ -309,7 +329,15 @@
 
                 <!-- Watch Image -->
                 <div class="relative overflow-hidden h-[500px] md:h-[800px]">
-                    <img src="img/scenes/watch.jpg" alt="Elegant timepiece" class="w-full h-full object-cover">
+                    <picture>
+                        <source srcset="img/scenes/watch-600.webp 600w,
+                                    img/scenes/watch-1200.webp 1200w,
+                                    img/scenes/watch-1800.webp 1800w" sizes="(max-width: 768px) 100vw,
+                                   (max-width: 1024px) 50vw,
+                                   50vw" type="image/webp">
+                        <img src="img/scenes/watch-1200.webp" alt="Elegant timepiece"
+                            class="w-full h-full object-cover">
+                    </picture>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-auto md:max-w-sm">
                         <h3 class="text-white font-medium text-lg md:text-xl mb-2 md:mb-3">Style Freedom</h3>
@@ -331,8 +359,13 @@
             <div class="md:hidden">
                 <!-- Mobile Image -->
                 <div class="relative h-[400px] overflow-hidden">
-                    <img src="img/device/side.335.png" alt="UNSEEN side view showing charging port"
-                        class="w-full h-full object-cover object-center">
+                    <picture>
+                        <source srcset="img/device/side.335-400.webp 400w,
+                                    img/device/side.335-800.webp 800w,
+                                    img/device/side.335-1200.webp 1200w" sizes="100vw" type="image/webp">
+                        <img src="img/device/side.335-800.webp" alt="UNSEEN side view showing charging port"
+                            class="w-full h-full object-cover object-center">
+                    </picture>
                 </div>
                 <!-- Mobile Text Content Below -->
                 <div class="px-4 py-6 text-center bg-white">
@@ -353,8 +386,15 @@
                 <div class="relative flex justify-center items-center min-h-[600px]">
                     <!-- Background Image -->
                     <div class="relative">
-                        <img src="img/device/side.335.png" alt="UNSEEN side view showing charging port"
-                            class="w-full h-auto max-w-full">
+                        <picture>
+                            <source srcset="img/device/side.335-400.webp 400w,
+                                        img/device/side.335-800.webp 800w,
+                                        img/device/side.335-1200.webp 1200w" sizes="(max-width: 768px) 100vw,
+                                       (max-width: 1024px) 80vw,
+                                       1200px" type="image/webp">
+                            <img src="img/device/side.335-800.webp" alt="UNSEEN side view showing charging port"
+                                class="w-full h-auto max-w-full">
+                        </picture>
 
                         <!-- Overlay Text -->
                         <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
@@ -379,8 +419,13 @@
     <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/ball.png" alt="Basketball player in action"
-                class="w-full h-full object-cover object-center" style="transform: scale(1.2);">
+            <picture>
+                <source srcset="img/scenes/ball-600.webp 600w,
+                            img/scenes/ball-1200.webp 1200w,
+                            img/scenes/ball-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/ball-1200.webp" alt="Basketball player in action"
+                    class="w-full h-full object-cover object-center" style="transform: scale(1.2);">
+            </picture>
             <!-- Subtle overlay for text readability -->
             <div
                 class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent md:bg-gradient-to-l md:from-black/60 md:via-black/15 md:to-transparent">
@@ -454,8 +499,13 @@
     <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/swiming.png" alt="Swimmer in pool showing waterproof capability"
-                class="w-full h-full object-cover object-right md:object-center">
+            <picture>
+                <source srcset="img/scenes/swiming-600.webp 600w,
+                            img/scenes/swiming-1200.webp 1200w,
+                            img/scenes/swiming-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/swiming-1200.webp" alt="Swimmer in pool showing waterproof capability"
+                    class="w-full h-full object-cover object-right md:object-center">
+            </picture>
             <!-- Subtle overlay for text readability -->
             <div
                 class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent md:from-black/40 md:via-black/15">
@@ -522,7 +572,13 @@
     <section class="relative h-[100vh] md:h-[1000px] lg:h-[1300px] overflow-hidden mx-0 md:mx-20 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/boxing.png" alt="Professional boxer training" class="w-full h-full object-cover">
+            <picture>
+                <source srcset="img/scenes/boxing-600.webp 600w,
+                            img/scenes/boxing-1200.webp 1200w,
+                            img/scenes/boxing-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/boxing-1200.webp" alt="Professional boxer training"
+                    class="w-full h-full object-cover">
+            </picture>
             <!-- Subtle overlay for text readability -->
             <div
                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent md:bg-gradient-to-r md:from-black/70 md:via-black/50 md:to-black/30">
@@ -613,8 +669,13 @@
     <section class="relative h-[100vh] md:h-[800px] lg:h-[1000px] overflow-hidden mx-0 md:mx-20 mb-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/sleep.png" alt="Peaceful sleep tracking with UNSEEN device"
-                class="w-full h-full object-cover md:object-center" style="object-position: 35% center;">
+            <picture>
+                <source srcset="img/scenes/sleep-600.webp 600w,
+                            img/scenes/sleep-1200.webp 1200w,
+                            img/scenes/sleep-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/sleep-1200.webp" alt="Peaceful sleep tracking with UNSEEN device"
+                    class="w-full h-full object-cover md:object-center" style="object-position: 35% center;">
+            </picture>
             <style>
                 @media (min-width: 768px) {
                     img[src="img/scenes/sleep.png"] {
@@ -740,8 +801,13 @@
     <section class="relative h-[100vh] md:h-[1000px] overflow-hidden mx-0 md:mx-20 mt-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/ManOnYogaMat.png" alt="Man practicing yoga with health monitoring"
-                class="w-full h-full object-cover">
+            <picture>
+                <source srcset="img/scenes/ManOnYogaMat-600.webp 600w,
+                            img/scenes/ManOnYogaMat-1200.webp 1200w,
+                            img/scenes/ManOnYogaMat-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/ManOnYogaMat-1200.webp" alt="Man practicing yoga with health monitoring"
+                    class="w-full h-full object-cover">
+            </picture>
             <!-- Dark overlay for text readability -->
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-black/60"></div>
             <div
@@ -874,8 +940,13 @@
     <section class="relative h-[100vh] md:h-[1000px] overflow-hidden mx-0 md:mx-20 mb-8 md:my-20">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="img/scenes/mountain.png" alt="Person standing on mountain peak"
-                class="w-full h-full object-cover">
+            <picture>
+                <source srcset="img/scenes/mountain-600.webp 600w,
+                            img/scenes/mountain-1200.webp 1200w,
+                            img/scenes/mountain-1800.webp 1800w" sizes="100vw" type="image/webp">
+                <img src="img/scenes/mountain-1200.webp" alt="Person standing on mountain peak"
+                    class="w-full h-full object-cover">
+            </picture>
             <!-- Mobile: Simple top-to-bottom gradient for better readability -->
             <div class="absolute inset-0 md:hidden bg-gradient-to-b from-black/40 via-black/20 to-black/70"></div>
             <!-- Desktop: Original horizontal gradient -->
@@ -1050,8 +1121,15 @@
                 <!-- Left Column - Sensors Image -->
                 <div class="lg:col-span-1 relative flex justify-center items-center py-8 md:py-0">
                     <div class="relative overflow-hidden">
-                        <img src="img/device/sensors.334.png" alt="UNSEEN medical-grade sensors"
-                            class="w-full h-auto max-w-sm md:max-w-lg">
+                        <picture>
+                            <source srcset="img/device/sensors.334-400.webp 400w,
+                                        img/device/sensors.334-800.webp 800w,
+                                        img/device/sensors.334-1200.webp 1200w" sizes="(max-width: 768px) 100vw,
+                                       (max-width: 1024px) 50vw,
+                                       400px" type="image/webp">
+                            <img src="img/device/sensors.334-800.webp" alt="UNSEEN medical-grade sensors"
+                                class="w-full h-auto max-w-sm md:max-w-lg">
+                        </picture>
                     </div>
                 </div>
 
