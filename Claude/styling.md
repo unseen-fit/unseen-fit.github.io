@@ -7,13 +7,11 @@ This document outlines the typography, colors, spacing, and design patterns used
 
 ### Font Families
 - **Primary Sans**: `Inter` (weights: 400, 500, 600, 700)
-- **Display Font**: `Orbitron` (weights: 400, 500, 600, 700, 800, 900)
 - **Brand Font**: `Figtree` (weights: 400, 500, 600, 700, 800, 900)
 
 ### Font Stack
 ```css
 font-family: 'Inter', 'system-ui', 'sans-serif'; /* Primary */
-font-family: 'Orbitron', 'monospace'; /* Display */
 font-family: 'Figtree', 'sans-serif'; /* Brand */
 ```
 
@@ -43,9 +41,17 @@ font-family: 'Figtree', 'sans-serif'; /* Brand */
 
 ## Colors
 
-### Primary Brand Colors
-- **UNSEEN Green**: `#117B69` (`unseen-green`)
-- **UNSEEN Green Light**: `#14A085` (`unseen-green-light`)
+### Monochrome Color Palette
+- **Pure Black**: `#000000` (`black`)
+- **Near Black**: `#111111` (`gray-950`)
+- **Very Dark Gray**: `#1F2937` (`gray-900`)
+- **Dark Gray**: `#374151` (`gray-800`)
+- **Medium Dark Gray**: `#4B5563` (`gray-700`)
+- **Medium Gray**: `#6B7280` (`gray-600`)
+- **Light Gray**: `#9CA3AF` (`gray-400`)
+- **Very Light Gray**: `#D1D5DB` (`gray-300`)
+- **Lightest Gray**: `#F3F4F6` (`gray-100`)
+- **Pure White**: `#FFFFFF` (`white`)
 
 ### Text Colors
 - **Primary Text**: `text-gray-900` (#111827)
@@ -139,7 +145,7 @@ bg-white hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold text-black
 bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20
 
 /* Content Card */
-bg-gradient-to-br from-unseen-green/5 to-unseen-green-light/5 border border-unseen-green/10 rounded-xl p-6
+bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-xl p-6
 ```
 
 ### Labels/Badges
@@ -234,7 +240,7 @@ grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
 
 ### Focus States
 - **Default**: Browser default focus rings
-- **Custom**: `focus:outline-none focus:ring-2 focus:ring-unseen-green`
+- **Custom**: `focus:outline-none focus:ring-2 focus:ring-gray-600`
 
 ### Color Contrast
 - **Primary Text**: High contrast against white backgrounds
@@ -265,12 +271,9 @@ tailwind.config = {
                 'glass-border': 'rgba(255, 255, 255, 0.25)',
                 'glass-bg': 'rgba(255, 255, 255, 0.15)',
                 'glass-bg-strong': 'rgba(255, 255, 255, 0.25)',
-                'unseen-green': '#117B69',
-                'unseen-green-light': '#14A085',
             },
             fontFamily: {
                 'sans': ['Inter', 'system-ui', 'sans-serif'],
-                'orbitron': ['Orbitron', 'monospace'],
                 'figtree': ['Figtree', 'sans-serif'],
             },
             backdropBlur: {
@@ -284,7 +287,7 @@ tailwind.config = {
 ## Usage Guidelines
 
 1. **Typography**: Use the defined font scale for consistent hierarchy
-2. **Colors**: Stick to the brand color palette for primary elements
+2. **Colors**: Use only monochrome colors from the defined palette
 3. **Spacing**: Use the spacing scale for consistent rhythm
 4. **Responsive**: Always design mobile-first with responsive breakpoints
 5. **Accessibility**: Ensure sufficient color contrast and focus states

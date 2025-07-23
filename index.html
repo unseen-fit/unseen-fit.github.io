@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#117B69">
+    <meta name="theme-color" content="#000000">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -47,12 +47,9 @@
                         'glass-border': 'rgba(255, 255, 255, 0.25)',
                         'glass-bg': 'rgba(255, 255, 255, 0.15)',
                         'glass-bg-strong': 'rgba(255, 255, 255, 0.25)',
-                        'unseen-green': '#117B69',
-                        'unseen-green-light': '#14A085',
                     },
                     fontFamily: {
                         'sans': ['Inter', 'system-ui', 'sans-serif'],
-                        'orbitron': ['Orbitron', 'monospace'],
                         'figtree': ['Figtree', 'sans-serif'],
                     },
                     backdropBlur: {
@@ -65,7 +62,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Figtree:wght@400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Figtree:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -84,10 +81,10 @@
 
                 <!-- Desktop Navigation Links & CTA Button -->
                 <div class="hidden md:flex items-center space-x-8 text-sm font-semibold ml-auto mr-20">
-                    <a href="#why" class="text-gray-600 hover:text-gray-900 transition-colors">Why unseen?</a>
                     <a href="/device" class="text-gray-600 hover:text-gray-900 transition-colors">Device</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">App</a>
                     <a href="#support" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                    <a href="/about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
                     <a href="#"
                         class="bg-black hover:bg-gray-800 transition-colors px-6 py-2 rounded-xl text-white inline-block">
                         Join Waitlist
@@ -115,15 +112,14 @@
             <!-- Mobile Dropdown Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
                 <div class="flex flex-col space-y-3 pt-4">
-                    <a href="#why"
-                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Why
-                        unseen?</a>
                     <a href="/device"
                         class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Device</a>
                     <a href="#faq"
                         class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">App</a>
                     <a href="#support"
                         class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Contact</a>
+                    <a href="/about"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">About</a>
                 </div>
             </div>
         </div>
@@ -1141,7 +1137,7 @@
                 <div class="lg:col-span-1 space-y-8 md:space-y-12">
                     <!-- Main Heading -->
                     <div>
-                        <div class="text-unseen-green text-sm font-semibold tracking-wider uppercase mb-4">
+                        <div class="text-gray-600 text-sm font-semibold tracking-wider uppercase mb-4">
                             MEDICAL-GRADE SENSORS
                         </div>
                         <h2
@@ -1159,7 +1155,7 @@
                     <!-- Sensor Features -->
                     <div class="space-y-6 md:space-y-8">
                         <!-- PPG Heart Rate -->
-                        <div class="border-l-4 border-unseen-green pl-4 md:pl-6">
+                        <div class="border-l-4 border-gray-600 pl-4 md:pl-6">
                             <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">FDA-Approved PPG Heart Rate
                             </h3>
                             <p class="text-base md:text-lg text-gray-600 leading-relaxed">
@@ -1191,8 +1187,7 @@
                         </div>
 
                         <!-- Medical Grade Precision -->
-                        <div
-                            class="bg-gradient-to-br from-unseen-green/5 to-unseen-green-light/5 border border-unseen-green/10 rounded-xl p-6">
+                        <div class="bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-xl p-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-4">Medical-Grade Data Quality</h3>
                             <div class="grid md:grid-cols-2 gap-4 text-sm">
                                 <div class="space-y-2">
@@ -1393,7 +1388,7 @@
 
             <!-- Pricing Card -->
             <div class="max-w-md mx-auto">
-                <div class="bg-gradient-to-br from-unseen-green to-unseen-green-light rounded-xl p-8 text-center">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 text-center">
                     <h3 class="text-2xl font-bold mb-2 text-white">UNSEEN Health Tracker</h3>
                     <div class="text-5xl font-bold mb-6 text-white">$150</div>
                     <p class="text-white/90 mb-8">One-time purchase, lifetime of health insights</p>
@@ -1442,7 +1437,7 @@
                     </ul>
 
                     <a href="#"
-                        class="w-full bg-white text-unseen-green font-bold py-4 rounded-xl text-lg hover:bg-gray-100 transition-colors inline-block text-center">
+                        class="w-full bg-white text-gray-900 font-bold py-4 rounded-xl text-lg hover:bg-gray-100 transition-colors inline-block text-center">
                         Join Waitlist
                     </a>
                 </div>
