@@ -81,10 +81,10 @@
 
                 <!-- Desktop Navigation Links & CTA Button -->
                 <div class="hidden md:flex items-center space-x-8 text-sm font-semibold ml-auto mr-20">
-                    <a href="/device" class="text-gray-600 hover:text-gray-900 transition-colors">Device</a>
-                    <a href="/#faq" class="text-gray-600 hover:text-gray-900 transition-colors">App</a>
-                    <a href="/#support" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-                    <a href="/about" class="text-gray-900 font-semibold">About</a>
+                    <a href="/" class="text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+                    <a href="/publications" class="text-gray-600 hover:text-gray-900 transition-colors">Publications</a>
+                    <a href="/support" class="text-gray-600 hover:text-gray-900 transition-colors">Support</a>
+                    <a href="/about" class="text-gray-900 font-semibold">About Us</a>
                     <a href="/"
                         class="bg-black hover:bg-gray-800 transition-colors px-6 py-2 rounded-xl text-white inline-block">
                         Join Waitlist
@@ -112,23 +112,20 @@
             <!-- Mobile Dropdown Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
                 <div class="flex flex-col space-y-3 pt-4">
-                    <a href="/why"
-                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Why
-                        unseen?</a>
-                    <a href="/device"
-                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Device</a>
-                    <a href="/#faq"
-                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">App</a>
-                    <a href="/#support"
-                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Contact</a>
-                    <a href="/about" class="text-gray-900 font-semibold py-2 px-2 rounded-lg bg-gray-100">About</a>
+                    <a href="/"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Home</a>
+                    <a href="/publications"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Publications</a>
+                    <a href="/support"
+                        class="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2 rounded-lg hover:bg-gray-50">Support</a>
+                    <a href="/about" class="text-gray-900 font-semibold py-2 px-2 rounded-lg bg-gray-100">About Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-screen overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0">
             <picture>
@@ -142,50 +139,113 @@
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
         </div>
 
-        <!-- Hero Content -->
-        <div class="relative z-10 text-center px-4 md:px-8 max-w-5xl mx-auto">
-            <div class="mb-8">
-                <span
-                    class="inline-block text-white/70 text-sm md:text-base font-medium tracking-widest uppercase mb-4">
+        <!-- Hero Content - Bottom Middle -->
+        <div class="relative z-10 min-h-screen flex items-end justify-center">
+            <div class="text-center px-4 md:px-8 pb-16 md:pb-24 max-w-5xl mx-auto">
+                <h1 class="text-5xl md:text-8xl lg:text-9xl font-black mb-6 leading-none tracking-tight text-white">
                     Who we are
-                </span>
+                </h1>
+                <p class="text-xl md:text-2xl lg:text-3xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">
+                    Science driven health innovation.
+                </p>
             </div>
-            <h1 class="text-5xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tight text-white">
-                About<br>
-                <span class="text-white/80">Unseen</span>
-            </h1>
-            <p class="text-xl md:text-2xl lg:text-3xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">
-                Revolutionizing health and elevating your life.
-            </p>
         </div>
     </section>
 
     <!-- About Content Section -->
     <section class="py-24 md:py-48 bg-white">
         <div class="max-w-4xl mx-auto px-4 md:px-8">
-            <div class="prose prose-lg max-w-none">
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-                    Born from frustration with existing health trackers, we set out to create something different. Our
-                    team of medical professionals and engineers built a device that disappears into your life while
-                    delivering clinical-grade insights that actually matter.
-                </p>
+            <div class="space-y-16 md:space-y-24">
+                <!-- Our Foundation -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900">
+                        Our Foundation
+                    </h2>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-6">
+                        We believe that health monitoring is fundamental to health improvement.
+                    </p>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
+                        Based in the UK, our leadership team includes practicing medical professionals who understand the critical
+                        importance of measurement accuracy. We've seen firsthand how "garbage in, garbage out" plagues
+                        the health tracking industry, and we're committed to changing that.
+                    </p>
+                </div>
 
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-                    The data is clear: when people have access to accurate health information, they make dramatically
-                    better decisions. We've eliminated the friction between you and your health data, creating a
-                    seamless experience that empowers real change.
-                </p>
+                <!-- Our Mission -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900">
+                        Our Mission
+                    </h2>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-6">
+                        We're passionate about empowering people to improve their health through innovation. But
+                        innovation without accuracy is meaningless. That's why we've built something we actually use
+                        ourselves—a device that delivers clinical-grade insights without the complexity, cost, or
+                        privacy concerns of traditional solutions.
+                    </p>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
+                        We believe that when people have access to accurate, actionable health information, they make
+                        dramatically better decisions. Our goal is to eliminate the friction between you and your health
+                        data, creating a seamless experience that empowers real, lasting change.
+                    </p>
+                </div>
 
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-                    We are grounded in science and comitted to accuracy. Your data never leaves your control—we believe
-                    privacy isn't a feature, it's fundamental. This is health tracking reimagined for people who demand
-                    more.
-                </p>
+                <!-- Our Principles -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900">
+                        Our Principles
+                    </h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">Privacy & Security</h3>
+                            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                                Your data never leaves your control. We believe privacy isn't a feature—it's
+                                fundamental. Unlike other health platforms that monetize your personal information,
+                                we've built our technology to process data locally, ensuring your health information
+                                remains yours alone.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">Data Ownership</h3>
+                            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                                No subscriptions. No hidden fees. No compromises. You own your device, you own your
+                                data, and we're here to support you for life. We believe that health technology should
+                                be accessible to everyone, not just those who can afford monthly fees.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">Measurement Accuracy</h3>
+                            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                                We're committed to clinical-grade accuracy because we know that inaccurate data is worse
+                                than no data at all. Our medical-grade sensors and algorithms are designed to provide
+                                insights you can trust, not just another set of meaningless numbers.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-900">Innovation</h3>
+                            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                                We're not just building another health tracker—we're reimagining what health technology
+                                can be. By combining medical expertise with cutting-edge engineering, we've created
+                                something that truly disappears into your life while delivering insights that matter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
-                    No subscriptions. No hidden fees. No compromises. You own your device, you own your data, and we're
-                    here to support you for life. This isn't just another gadget—it's your health, elevated.
-                </p>
+                <!-- Our commitment -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900">
+                        Our commitment
+                    </h2>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-6">
+                        We've made something we use ourselves, and we hope you'll find it useful too. This isn't just
+                        another gadget—it's your health, elevated. We're committed to continuous improvement, always
+                        listening to our users and pushing the boundaries of what's possible.
+                    </p>
+                    <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
+                        Join us in redefining what health technology can be. Because when it comes to your health, you
+                        deserve better than the status quo.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
