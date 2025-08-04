@@ -2,9 +2,28 @@
 
 ## Overview
 
-UNSEEN represents a fundamental shift in health tracking technology. Unlike traditional wearables that compete for wrist space and require constant interaction, UNSEEN operates invisibly on your upper arm, delivering medical-grade insights without disrupting your life. Here's why UNSEEN is the smart choice for anyone serious about their health.
+UNSEEN is a no-subscription, upper arm-placed fitness and health companion with longevity estimation. Unlike traditional wearables that compete for wrist space and require constant interaction, UNSEEN operates invisibly on your upper arm, delivering medical-grade insights without disrupting your life. Here's why UNSEEN is the smart choice for anyone serious about their health.
 
-## 1. No Subscriptions - True Ownership
+## 1. Science-Based Design and Development
+
+### Medical Expertise at the Core
+UNSEEN's design team is led by doctors and medical professionals who understand the critical importance of accurate health measurements and meaningful health insights.
+
+### Research-Driven Approach
+- **Peer-reviewed research foundation**: All metrics and algorithms based on published medical research
+- **Gold standard validation**: Measurements validated against clinical reference devices
+- **Medical-grade accuracy**: FDA-approved sensors and clinical-grade algorithms
+- **Continuous validation**: Ongoing testing against medical standards
+- **Evidence-based insights**: Every feature backed by scientific research
+
+### Scientific Rigor
+- **Clinical trials**: Extensive testing with medical professionals
+- **Research partnerships**: Collaboration with leading medical institutions
+- **Peer-reviewed validation**: Independent verification of accuracy and efficacy
+- **Transparent methodology**: Open about research foundations and validation processes
+- **Passionate about accuracy**: Unwavering commitment to medical-grade precision
+
+## 2. No Subscriptions - True Ownership
 
 ### The Problem with Subscriptions
 Most health tracking solutions lock you into monthly or annual subscriptions, creating ongoing financial commitments that can add up to hundreds of dollars over time. Many also gate essential features behind premium paywalls.
@@ -19,7 +38,7 @@ Most health tracking solutions lock you into monthly or annual subscriptions, cr
 ### Financial Impact
 Over 5 years, subscription-based solutions can cost $600-1200. UNSEEN's one-time purchase model saves you money while delivering superior technology.
 
-## 2. Upper Arm Placement - Free Your Wrist
+## 3. Upper Arm Placement - Free Your Wrist
 
 ### The Wrist Problem
 Traditional smartwatches and fitness trackers compete with your existing timepieces, professional requirements, and personal style. They're often bulky, distracting, and can interfere with daily activities.
@@ -37,28 +56,73 @@ Traditional smartwatches and fitness trackers compete with your existing timepie
 - **Professionals**: Maintain professional appearance while tracking health
 - **Fashion-conscious**: Preserve personal style without compromise
 
-## 3. Activity Index - Revolutionary Health Metric
+## 4. Cardio Index - Revolutionary Health Metric
 
 ### Beyond Step Counting
 Traditional fitness trackers focus on basic metrics like steps, calories, and heart rate. These provide limited insight into overall health and fitness levels.
 
-### UNSEEN's Activity Index
+### UNSEEN's Cardio Index
 - **Research-backed**: Based on decades of medical research with over 1 million participants
+- **Peer-reviewed foundation**: Algorithm validated through published medical studies
 - **Comprehensive metric**: Combines multiple health factors into a single, meaningful score
+- **Better activity measurement**: Goes beyond standard activity tracking to provide deeper insights
 - **Predictive insights**: Helps identify health trends before they become problems
 - **Actionable guidance**: Provides specific recommendations for improvement
 - **Long-term tracking**: Monitors health progression over time
 
 ### Scientific Foundation
-The Activity Index incorporates:
-- Cardiovascular fitness (VO2 Max)
-- Recovery patterns (HRV analysis)
-- Sleep quality and duration
-- Stress levels and management
-- Physical activity intensity and variety
-- Metabolic health indicators
+The Cardio Index incorporates:
+- Cardiovascular fitness (VO2 Max) - validated against clinical standards
+- Recovery patterns (HRV analysis) - based on peer-reviewed research
+- Sleep quality and duration - clinically validated metrics
+- Stress levels and management - research-backed stress assessment
+- Physical activity intensity and variety - validated activity algorithms
+- Metabolic health indicators - clinically proven markers
 
-## 4. Privacy and Data Control
+## 5. Complete Health Visibility
+
+### Comprehensive Health Monitoring
+UNSEEN provides complete health visibility through medical-grade sensors that track all essential vital signs and health metrics.
+
+### Complete Health Picture
+- **Heart Rate**: FDA-approved optical sensor with motion compensation
+- **SpO2**: Blood oxygen saturation monitoring validated against clinical devices
+- **Blood Pressure**: Trend analysis and estimation based on peer-reviewed research
+- **HRV**: Heart rate variability for recovery insights - clinically validated
+- **VO2 Max**: Fitness level assessment using gold standard techniques
+- **Stress Monitoring**: Real-time stress scoring based on medical research
+- **Sleep analysis**: Quality, duration, and recovery patterns validated clinically
+- **Recovery insights**: Optimal training and rest recommendations from medical studies
+- **Health trends**: Long-term health progression tracking with research-backed algorithms
+
+### Medical-Grade Accuracy
+- **FDA-approved sensors**: Meets clinical accuracy standards
+- **Validated accuracy**: Tested against medical reference devices
+- **Advanced algorithms**: Motion compensation for reliable readings during activity
+- **Continuous monitoring**: 24/7 tracking without gaps
+- **Multiple biometric sensors**: Comprehensive health picture
+- **Gold standard validation**: All measurements compared against clinical reference devices
+
+## 6. Longevity - Biological Age Estimation
+
+### Understanding Your Biological Age
+UNSEEN goes beyond traditional health tracking to provide insights into your biological age and pace of aging.
+
+### Longevity Features
+- **Biological age estimation**: Age estimation based on health markers from peer-reviewed research
+- **Pace of aging tracking**: Monitor how your biological age changes over time
+- **Longevity insights**: Understand factors affecting your aging process
+- **Health optimization**: Recommendations to improve biological age
+- **Long-term health trends**: Track aging-related health changes
+
+### Scientific Approach
+- **Multi-marker analysis**: Combines various health indicators for accurate age estimation
+- **Research-backed algorithms**: Based on longevity and aging research
+- **Clinical validation**: Biological age estimation validated against medical standards
+- **Personalized insights**: Tailored recommendations for your specific health profile
+- **Progress tracking**: Monitor improvements in biological age over time
+
+## 7. Privacy and Data Control
 
 ### The Privacy Crisis in Health Tech
 Many health tracking companies monetize user data through third-party partnerships, creating privacy concerns and potential security vulnerabilities.
@@ -76,72 +140,6 @@ Many health tracking companies monetize user data through third-party partnershi
 - Transparent privacy policy with no hidden clauses
 - Regular security audits and updates
 - Compliance with international privacy regulations
-
-## 5. Medical-Grade Sensor Accuracy
-
-### The Accuracy Gap
-Consumer-grade fitness trackers often provide inconsistent or inaccurate readings, leading to poor health decisions and missed health issues.
-
-### UNSEEN's Medical-Grade Technology
-- **FDA-approved heart rate sensor**: Meets clinical accuracy standards
-- **Validated accuracy**: Tested against medical reference devices
-- **Advanced algorithms**: Motion compensation for reliable readings during activity
-- **Continuous monitoring**: 24/7 tracking without gaps
-- **Multiple biometric sensors**: Comprehensive health picture
-
-### Sensor Specifications
-- **Heart Rate**: FDA-approved optical sensor with motion compensation
-- **SpO2**: Blood oxygen saturation monitoring
-- **Blood Pressure**: Trend analysis and estimation
-- **HRV**: Heart rate variability for recovery insights
-- **VO2 Max**: Fitness level assessment
-- **Stress Monitoring**: Real-time stress scoring
-
-### Validation Process
-- Clinical trials with medical professionals
-- Comparison against gold-standard medical devices
-- Peer-reviewed research validation
-- Continuous accuracy monitoring and improvement
-- Regular firmware updates for enhanced precision
-
-## 6. Lifetime Support and Updates
-
-### The Planned Obsolescence Problem
-Many tech companies design products with limited lifespans, forcing upgrades every 2-3 years and abandoning older devices.
-
-### UNSEEN's Long-Term Commitment
-- **Lifetime app support**: Continuous updates and new features
-- **Firmware updates**: Regular improvements to accuracy and functionality
-- **Customer support**: Dedicated team available throughout product lifecycle
-- **Repair services**: Parts and service available for years
-- **Community engagement**: Active user community and feedback integration
-
-### What This Means for You
-- Your investment is protected for years to come
-- New features and capabilities added regularly
-- Technical support when you need it
-- Product improvements without additional cost
-- Long-term health tracking consistency
-
-## 7. Comprehensive Health Monitoring
-
-### Beyond Basic Fitness Tracking
-UNSEEN doesn't just count steps or track workouts—it provides a complete picture of your health and wellness.
-
-### Complete Health Picture
-- **Vital signs monitoring**: Heart rate, blood pressure, SpO2, HRV
-- **Sleep analysis**: Quality, duration, and recovery patterns
-- **Stress management**: Real-time stress levels and coping strategies
-- **Biological age**: Age estimation based on health markers
-- **Recovery insights**: Optimal training and rest recommendations
-- **Health trends**: Long-term health progression tracking
-
-### Health Outcomes
-- Early detection of health issues
-- Improved sleep quality and recovery
-- Better stress management
-- Optimized training and fitness routines
-- Enhanced overall wellness and longevity
 
 ## 8. Seamless Integration
 
@@ -182,37 +180,42 @@ UNSEEN's design prioritizes functionality, comfort, and durability for 24/7 wear
 - Travel and outdoor activities
 - Daily life and exercise
 
-## 10. Future-Proof Technology
+## 10. Lifetime Support and Updates
 
-### Continuous Innovation
-UNSEEN's platform is designed to evolve with advancing health technology and research.
+### The Planned Obsolescence Problem
+Many tech companies design products with limited lifespans, forcing upgrades every 2-3 years and abandoning older devices.
 
-### Innovation Pipeline
-- **AI-powered insights**: Machine learning for personalized recommendations
-- **Advanced analytics**: Deeper health pattern recognition
-- **New health metrics**: Emerging health indicators and measurements
-- **Enhanced accuracy**: Ongoing sensor and algorithm improvements
-- **Expanded integrations**: New app and platform partnerships
+### UNSEEN's Long-Term Commitment
+- **Lifetime app support**: Continuous updates and new features
+- **Firmware updates**: Regular improvements to accuracy and functionality
+- **Customer support**: Dedicated team available throughout product lifecycle
+- **Repair services**: Parts and service available for years
+- **Community engagement**: Active user community and feedback integration
 
-### Investment Protection
-- Your device evolves with technology
-- New capabilities added through software updates
-- Research-backed feature additions
-- Community-driven improvements
-- Long-term value preservation
+### What This Means for You
+- Your investment is protected for years to come
+- New features and capabilities added regularly
+- Technical support when you need it
+- Product improvements without additional cost
+- Long-term health tracking consistency
 
 ## Conclusion
 
-UNSEEN represents more than just another health tracker—it's a comprehensive health monitoring solution that respects your privacy, your lifestyle, and your investment. By choosing UNSEEN, you're investing in:
+UNSEEN is a no-subscription, upper arm-placed fitness and health companion with longevity estimation. By choosing UNSEEN, you're investing in:
 
+- **Science-based design** led by doctors and validated against gold standard techniques
 - **True ownership** without ongoing costs
-- **Medical-grade accuracy** for reliable health insights
-- **Privacy-first design** that protects your data
-- **Revolutionary placement** that frees your wrist
+- **Upper arm placement** that frees your wrist
+- **Cardio Index** as a better way to measure activity beyond standard tracking
+- **Complete health visibility** through comprehensive vital sign monitoring
+- **Longevity insights** with biological age estimation and pace of aging tracking
 - **Lifetime support** that protects your investment
-- **Comprehensive monitoring** for complete health visibility
 
-UNSEEN is designed for people who demand more from their health technology—more accuracy, more privacy, more freedom, and more value. It's not just about tracking your health; it's about elevating your entire approach to wellness.
+UNSEEN is designed for people who demand more from their health technology—more accuracy, more privacy, more freedom, and more value. It's not just about tracking your health; it's about elevating your entire approach to wellness and understanding your biological aging process, all backed by medical expertise and peer-reviewed research.
+
+---
+
+*UNSEEN: Health tracking reimagined for people who demand more.*
 
 ---
 
