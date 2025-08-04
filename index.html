@@ -173,7 +173,7 @@
     <!-- Main Section -->
     <section class="py-8 md:py-12  md:px-8 bg-white">
 
-        
+
         <div class="max-w-7xl mx-auto">
             <!-- Main Product Layout -->
             <div class="px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
@@ -229,9 +229,10 @@
                             </button>
                             <button
                                 class="gallery-thumb-mobile w-16 h-16 border-2 border-gray-300 rounded-lg overflow-hidden hover:border-gray-400 transition-colors flex-shrink-0"
-                                data-image="img/device/raw/charger.320.png" data-alt="UNSEEN device magnetic charger">
-                                <img src="img/device/raw/charger.320.png" alt="Charger"
-                                    class="w-full h-full object-contain p-2">
+                                data-image="img/device/raw/charger.jpeg" data-alt="UNSEEN device magnetic charger"
+                                data-object-fit="cover">
+                                <img src="img/device/raw/charger.jpeg" alt="Charger"
+                                    class="w-full h-full object-cover p-2">
                             </button>
                         </div>
                     </div>
@@ -352,9 +353,10 @@
                             </button>
                             <button
                                 class="gallery-thumb w-20 h-20 border-2 border-gray-300 rounded-lg overflow-hidden hover:border-gray-400 transition-colors flex-shrink-0"
-                                data-image="img/device/raw/charger.320.png" data-alt="UNSEEN device magnetic charger">
-                                <img src="img/device/raw/charger.320.png" alt="Charger"
-                                    class="w-full h-full object-contain p-2">
+                                data-image="img/device/raw/charger.jpeg" data-alt="UNSEEN device magnetic charger"
+                                data-object-fit="cover">
+                                <img src="img/device/raw/charger.jpeg" alt="Charger"
+                                    class="w-full h-full object-cover p-2">
                             </button>
                         </div>
 
@@ -956,7 +958,8 @@
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">Seamless integration everywhere</h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Standard BLE heart rate works with any app that accepts bluetooth heart rate monitorings - universal compatibility.
+                        Standard BLE heart rate works with any app that accepts bluetooth heart rate monitorings -
+                        universal compatibility.
                     </p>
                 </div>
 
@@ -1545,6 +1548,15 @@
                 mainImage.classList.remove('object-contain', 'object-cover');
                 mainImage.classList.add(`object-${objectFit}`);
 
+                // Special handling for charger image - apply custom zoom
+                if (currentActiveThumb.dataset.image.includes('charger')) {
+                    mainImage.style.transform = 'scale(2)';
+                    mainImage.style.objectPosition = 'center bottom';
+                } else {
+                    mainImage.style.transform = 'scale(1) translateY(0)';
+                    mainImage.style.objectPosition = 'center center';
+                }
+
                 // Update border states for desktop thumbnails
                 updateDesktopThumbnailStates();
             }
@@ -1600,6 +1612,15 @@
                 // Change image
                 mobileMainImage.src = currentMobileActiveThumb.dataset.image;
                 mobileMainImage.alt = currentMobileActiveThumb.dataset.alt;
+
+                // Special handling for charger image - apply custom zoom
+                if (currentMobileActiveThumb.dataset.image.includes('charger')) {
+                    mobileMainImage.style.transform = 'scale(2)';
+                    mobileMainImage.style.objectPosition = 'center bottom';
+                } else {
+                    mobileMainImage.style.transform = 'scale(1) translateY(0)';
+                    mobileMainImage.style.objectPosition = 'center center';
+                }
 
                 // Update border states for mobile thumbnails
                 updateMobileThumbnailStates();
