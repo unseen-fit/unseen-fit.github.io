@@ -594,18 +594,19 @@
                                 </div>
                             </div>
 
-                            <!-- Features -->
+                            <!-- Fitness -->
                             <div>
                                 <button
                                     class="specs-subsection-toggle w-full flex items-center justify-between text-left py-3 border-b border-gray-200 hover:bg-gray-50 transition-colors"
-                                    data-target="features-content">
+                                    data-target="fitness-content">
                                     <div class="flex items-center space-x-3">
                                         <svg class="w-5 h-5 text-gray-600 flex-shrink-0" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                            </path>
                                         </svg>
-                                        <h4 class="text-lg font-semibold text-gray-900">Features</h4>
+                                        <h4 class="text-lg font-semibold text-gray-900">Day-to-Day Fitness</h4>
                                     </div>
                                     <svg class="specs-subsection-icon w-4 h-4 text-gray-600" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
@@ -613,57 +614,209 @@
                                             d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                     </svg>
                                 </button>
-                                <div id="features-content" class="specs-subsection-content hidden">
+                                <div id="fitness-content" class="specs-subsection-content hidden">
                                     <div class="py-3 pl-4">
                                         <div class="space-y-4">
+                                            <p class="text-sm text-gray-600 mb-4">
+                                                The device is always on, continuously gathering fitness data. Cardio
+                                                Index is our evidence-based high-level aggregate metric—the core
+                                                exertional metric that provides the most accurate measure of your
+                                                physical activity's health impact.
+                                            </p>
                                             <div>
-                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Fitness</h5>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Fitness Tracking
+                                                </h5>
                                                 <ul class="text-sm text-gray-600 space-y-1 ml-4">
-                                                    <li><strong>Activity Tracking:</strong> Steps, distance, calories
-                                                    </li>
-                                                    <li><strong>Workout Detection:</strong> Automatic exercise
-                                                        recognition</li>
-                                                    <li><strong>Recovery Monitoring:</strong> Rest and readiness
-                                                        tracking</li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Health</h5>
-                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
-                                                    <li><strong>Heart Rate:</strong> Continuous monitoring</li>
-                                                    <li><strong>Blood Oxygen:</strong> SpO2 tracking</li>
-                                                    <li><strong>Blood Pressure:</strong> Estimated readings</li>
-                                                    <li><strong>HRV Analysis:</strong> Stress and recovery insights</li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Longevity</h5>
-                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
-                                                    <li><strong>Biological Age:</strong> Estimation and tracking</li>
-                                                    <li><strong>Aging Pace:</strong> Rate of aging analysis</li>
-                                                    <li><strong>Health Trends:</strong> Long-term health monitoring</li>
+                                                    <li><strong>Steps, Distance, Calories:</strong> Comprehensive
+                                                        activity metrics</li>
+                                                    <li><strong>Stand Hours:</strong> Sedentary behavior monitoring</li>
+                                                    <li><strong>Move Time:</strong> Sedentary, active, and intense
+                                                        activity tracking</li>
+                                                    <li><strong>Personal Records:</strong> Track frequency trends and
+                                                        performance milestones</li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h5 class="text-sm font-semibold text-gray-800 mb-2">Cardio Index</h5>
                                                 <ul class="text-sm text-gray-600 space-y-1 ml-4">
-                                                    <li><strong>Revolutionary Metric:</strong> Beyond traditional
-                                                        activity tracking</li>
-                                                    <li><strong>Cardiovascular Health:</strong> Comprehensive heart
-                                                        health assessment</li>
-                                                    <li><strong>Real-time Monitoring:</strong> Continuous cardio
-                                                        performance tracking</li>
+                                                    <li><strong>Heart Rate Based:</strong> 7-day rolling window scoring
+                                                        system</li>
+                                                    <li><strong>Endurance Focus:</strong> Activities above 60% max heart
+                                                        rate</li>
+                                                    <li><strong>Personalized Effort:</strong> Same relative effort =
+                                                        same score regardless of fitness</li>
+                                                    <li><strong>Health Impact:</strong> Optimizes cardiorespiratory
+                                                        fitness and longevity</li>
+                                                    <li><strong>Motivation:</strong> Streaks, badges, levels, and
+                                                        achievement recognition</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Workouts -->
+                            <div>
+                                <button
+                                    class="specs-subsection-toggle w-full flex items-center justify-between text-left py-3 border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                                    data-target="activities-content">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-gray-600 flex-shrink-0" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                        <h4 class="text-lg font-semibold text-gray-900">Custom Workouts</h4>
+                                    </div>
+                                    <svg class="specs-subsection-icon w-4 h-4 text-gray-600" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                </button>
+                                <div id="activities-content" class="specs-subsection-content hidden">
+                                    <div class="py-3 pl-4">
+                                        <div class="space-y-4">
+                                            <p class="text-sm text-gray-600 mb-4">
+                                                UNSEEN offers two distinct modes for workout tracking, giving you
+                                                flexibility in how you monitor your activities.
+                                            </p>
+                                            <div>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Always On Passive
+                                                </h5>
+                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                                    <li><strong>Background Tracking:</strong> Always on and registering
+                                                        workout data</li>
+                                                    <li><strong>Automatic Detection:</strong> Continuous monitoring
+                                                        without user interaction</li>
+                                                    <li><strong>Basic Metrics:</strong> Steps, distance, calories, and
+                                                        activity patterns</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Workout Mode</h5>
+                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                                    <li><strong>Manual Trigger:</strong> Press device button or activate
+                                                        via app</li>
+                                                    <li><strong>Enhanced Sensors:</strong> GPS activation and increased
+                                                        sensor sampling frequency</li>
+                                                    <li><strong>Live HR Monitoring:</strong> High-precision heart rate
+                                                        data during sessions</li>
+                                                    <li><strong>Activity Tagging:</strong> 150+ pre-loaded activities or
+                                                        create custom ones</li>
+                                                    <li><strong>Workout Analysis:</strong> Detailed post-session data
+                                                        breakdown</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Health & Longevity -->
+                            <div>
+                                <button
+                                    class="specs-subsection-toggle w-full flex items-center justify-between text-left py-3 border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                                    data-target="health-longevity-content">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-gray-600 flex-shrink-0" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                            </path>
+                                        </svg>
+                                        <h4 class="text-lg font-semibold text-gray-900">Health & Longevity</h4>
+                                    </div>
+                                    <svg class="specs-subsection-icon w-4 h-4 text-gray-600" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                </button>
+                                <div id="health-longevity-content" class="specs-subsection-content hidden">
+                                    <div class="py-3 pl-4">
+                                        <div class="space-y-4">
+                                            <div>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Health Monitoring
+                                                </h5>
+                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                                    <li><strong>Heart Health:</strong> HR, RHR, BP (manual + estimated
+                                                        trends)</li>
+                                                    <li><strong>Respiratory Health:</strong> SpO2, respiratory rate, VO2
+                                                        Max</li>
+                                                    <li><strong>Altitude Acclimation:</strong> High-altitude adaptation
+                                                        tracking</li>
+                                                    <li><strong>Body Composition:</strong> Weight, BMI, circumference
+                                                        tracking</li>
+                                                    <li><strong>Skin Health:</strong> UV exposure time, temperature
+                                                        acclimation</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Longevity</h5>
+                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                                    <li><strong>Biological Age:</strong> Age vs chronological age
+                                                        estimation</li>
+                                                    <li><strong>Aging Pace:</strong> Rate of biological aging tracking
+                                                    </li>
+                                                    <li><strong>Longevity Index:</strong> Overall health and aging score
+                                                    </li>
+                                                    <li><strong>Anti-aging Insights:</strong> Longevity optimization
+                                                        recommendations</li>
+                                                    <li><strong>Aging Trajectory:</strong> Long-term aging pattern
+                                                        analysis</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recovery & Sleep -->
+                            <div>
+                                <button
+                                    class="specs-subsection-toggle w-full flex items-center justify-between text-left py-3 border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                                    data-target="recovery-sleep-content">
+                                    <div class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-gray-600 flex-shrink-0" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                            </path>
+                                        </svg>
+                                        <h4 class="text-lg font-semibold text-gray-900">Recovery & Sleep</h4>
+                                    </div>
+                                    <svg class="specs-subsection-icon w-4 h-4 text-gray-600" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                </button>
+                                <div id="recovery-sleep-content" class="specs-subsection-content hidden">
+                                    <div class="py-3 pl-4">
+                                        <div class="space-y-4">
+                                            <div>
+                                                <h5 class="text-sm font-semibold text-gray-800 mb-2">Recovery</h5>
+                                                <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                                    <li><strong>HRV & RHR:</strong> Nervous system health monitoring
+                                                    </li>
+                                                    <li><strong>Recovery Score:</strong> Daily readiness with
+                                                        overtraining detection</li>
+                                                    <li><strong>Recovery Insights:</strong> Personalized recovery
+                                                        recommendations</li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h5 class="text-sm font-semibold text-gray-800 mb-2">Sleep</h5>
                                                 <ul class="text-sm text-gray-600 space-y-1 ml-4">
-                                                    <li><strong>Sleep Stages:</strong> Deep, light, REM sleep tracking
+                                                    <li><strong>Sleep Stages:</strong> Deep, light, REM sleep analysis
                                                     </li>
-                                                    <li><strong>Sleep Quality:</strong> Comprehensive sleep analysis
+                                                    <li><strong>Sleep Score:</strong> Overall sleep quality rating</li>
+                                                    <li><strong>Sleep Debt:</strong> Cumulative sleep deficit tracking
                                                     </li>
-                                                    <li><strong>Recovery Insights:</strong> Sleep-based recovery
-                                                        recommendations</li>
+                                                    <li><strong>Sleep Coaching:</strong> Personalized sleep optimization
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
